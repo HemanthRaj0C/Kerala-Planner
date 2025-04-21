@@ -73,7 +73,7 @@ export default function FeedbackForm() {
   };
   
   return (
-    <main className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
+    <main className="min-h-screen bg-gradient-to-b from-blue-50 to-white overflow-x-hidden">
       <Header onLoginClick={() => setIsLoginModalOpen(true)}/>
       
       <section className="py-16 relative">
