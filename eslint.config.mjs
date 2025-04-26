@@ -9,26 +9,6 @@ const compat = new FlatCompat({
   baseDirectory: __dirname,
 });
 
-const eslintConfig = [
-  ...compat.extends("next/core-web-vitals"), // Keep Next.js recommended rules
-
-  {
-    files: ["**/*.js", "**/*.jsx", "**/*.ts", "**/*.tsx"],
-    languageOptions: {
-      ecmaVersion: "latest",
-      sourceType: "module",
-      ecmaFeatures: {
-        jsx: true,
-      },
-    },
-    rules: {
-      // Disable specific rules
-      "react/no-unescaped-entities": "off",
-      "@next/next/no-img-element": "off",
-      "no-console": "off",
-      "react/react-in-jsx-scope": "off",
-    },
-  },
-];
+const eslintConfig = [...compat.extends("next/core-web-vitals")];
 
 export default eslintConfig;
