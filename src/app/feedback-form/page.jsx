@@ -73,7 +73,7 @@ export default function FeedbackForm() {
   };
   
   return (
-    <main className="min-h-screen bg-gradient-to-b from-blue-50 to-white overflow-x-hidden">
+    <main className="min-h-screen bg-gradient-to-b from-blue-50 to-white overflow-x-hidden text-black">
       <Header onLoginClick={() => setIsLoginModalOpen(true)}/>
       
       <section className="py-16 relative">
@@ -96,8 +96,8 @@ export default function FeedbackForm() {
         <div className="container mx-auto px-4 py-24">
   {!isSubmitted ? (
     <>
-      <h1 className="text-4xl font-bold text-center mb-4 text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600">We'd Love Your Feedback</h1>
-      <p className="text-center text-gray-600 mb-10 max-w-2xl mx-auto">Your thoughts help us create better experiences for future travelers</p>
+      <h1 className="text-4xl font-bold text-center mb-4 text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600">So You're Not Coming? Seriously?</h1>
+      <p className="text-center text-gray-600 mb-10 max-w-2xl mx-auto">Tell us why you've made such a terrible decision so we can judge you accordingly</p>
       
       <div className="max-w-3xl mx-auto bg-white rounded-2xl shadow-xl overflow-hidden">
         {/* Progress indicator - Fixed */}
@@ -109,7 +109,7 @@ export default function FeedbackForm() {
                   {i + 1}
                 </div>
                 <span className="mt-1 text-xs text-white">
-                  {i === 0 ? 'Info' : i === 1 ? 'Details' : 'Improve'}
+                  {i === 0 ? 'Excuses' : i === 1 ? 'More Excuses' : 'Last Chance'}
                 </span>
               </div>
             ))}
@@ -128,7 +128,7 @@ export default function FeedbackForm() {
         <form onSubmit={handleSubmit} className="p-6 md:p-8">
           <div className={`form-step ${activeStep === 1 ? 'block' : 'hidden'} ${animation}`}>
             <div className="mb-6">
-              <label htmlFor="name" className="block mb-2 text-gray-700 font-medium">Your Name</label>
+              <label htmlFor="name" className="block mb-2 text-gray-700 font-medium">Your Name (So We Know Who To Mock)</label>
               <input
                 type="text"
                 id="name"
@@ -136,13 +136,13 @@ export default function FeedbackForm() {
                 value={formData.name}
                 onChange={handleChange}
                 className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-400 focus:border-transparent transition-all"
-                placeholder="Enter your name"
+                placeholder="The name that will live in shame"
                 required
               />
             </div>
             
             <div className="mb-6">
-              <label htmlFor="email" className="block mb-2 text-gray-700 font-medium">Email Address</label>
+              <label htmlFor="email" className="block mb-2 text-gray-700 font-medium">Email Address (For Guilt-Trip Messages)</label>
               <input
                 type="email"
                 id="email"
@@ -150,7 +150,7 @@ export default function FeedbackForm() {
                 value={formData.email}
                 onChange={handleChange}
                 className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-400 focus:border-transparent transition-all"
-                placeholder="your.email@example.com"
+                placeholder="Where we'll send FOMO-inducing photos"
                 required
               />
             </div>
@@ -161,14 +161,14 @@ export default function FeedbackForm() {
                 onClick={nextStep}
                 className="bg-gradient-to-r from-blue-500 to-blue-700 hover:from-blue-600 hover:to-blue-800 text-white font-medium py-3 px-8 rounded-lg transition-all shadow-md hover:shadow-lg flex items-center gap-2"
               >
-                Next Step <span className="text-lg">→</span>
+                Fine, Keep Going <span className="text-lg">→</span>
               </button>
             </div>
           </div>
           
           <div className={`form-step ${activeStep === 2 ? 'block' : 'hidden'} ${animation}`}>
             <div className="mb-6">
-              <label htmlFor="reason" className="block mb-2 text-gray-700 font-medium">Why did you decide not to join the Kerala trip?</label>
+              <label htmlFor="reason" className="block mb-2 text-gray-700 font-medium">What's Your Lame Excuse For Not Coming?</label>
               <div className="relative">
                 <select
                   id="reason"
@@ -178,11 +178,11 @@ export default function FeedbackForm() {
                   className="w-full p-3 border border-gray-300 rounded-lg appearance-none focus:ring-2 focus:ring-blue-400 focus:border-transparent transition-all"
                   required
                 >
-                  <option value="">Select a reason</option>
-                  <option value="budget">Budget constraints</option>
-                  <option value="timing">Bad timing</option>
-                  <option value="destination">Not interested in Kerala as a destination</option>
-                  <option value="other">Other reasons</option>
+                  <option value="">Select your sad excuse</option>
+                  <option value="budget">"I can't afford it" (but you buy $6 coffee daily)</option>
+                  <option value="timing">"Bad timing" (like you're so busy)</option>
+                  <option value="destination">"Not interested in Kerala" (as if you have better ideas)</option>
+                  <option value="other">"Other reasons" (this should be good)</option>
                 </select>
                 <div className="absolute right-3 top-1/2 transform -translate-y-1/2 pointer-events-none">
                   <svg className="w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path></svg>
@@ -192,7 +192,7 @@ export default function FeedbackForm() {
             
             {formData.reason === 'other' && (
               <div className="mb-6 animate-fade-in">
-                <label htmlFor="otherPlans" className="block mb-2 text-gray-700 font-medium">What are your travel plans instead?</label>
+                <label htmlFor="otherPlans" className="block mb-2 text-gray-700 font-medium">What Are Your "Better" Plans? (LOL)</label>
                 <textarea
                   id="otherPlans"
                   name="otherPlans"
@@ -200,28 +200,32 @@ export default function FeedbackForm() {
                   onChange={handleChange}
                   className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-400 focus:border-transparent transition-all"
                   rows="3"
-                  placeholder="Tell us about your alternative travel plans..."
+                  placeholder="Let me guess... staying home and watching Netflix again?"
                 ></textarea>
               </div>
             )}
             
             <div className="mb-6">
-              <p className="block mb-3 text-gray-700 font-medium">Would you consider a Kerala trip in the future?</p>
+              <p className="block mb-3 text-gray-700 font-medium">Would You Consider Coming When You Finally Get Some Sense?</p>
               <div className="flex flex-wrap gap-4">
-                {['yes', 'no', 'maybe'].map((option) => (
-                  <label key={option} className="interest-option">
+                {[
+                  {value: 'yes', label: "Yes, I'll Stop Being Lame"},
+                  {value: 'no', label: 'No, I Like Missing Out'},
+                  {value: 'maybe', label: 'Maybe (Meaning No)'}
+                ].map((option) => (
+                  <label key={option.value} className="interest-option">
                     <input
                       type="radio"
                       name="futureInterest"
-                      value={option}
-                      checked={formData.futureInterest === option}
+                      value={option.value}
+                      checked={formData.futureInterest === option.value}
                       onChange={handleChange}
                       className="hidden"
                     />
-                    <div className={`px-6 py-3 rounded-full cursor-pointer transition-all ${formData.futureInterest === option 
+                    <div className={`px-6 py-3 rounded-full cursor-pointer transition-all ${formData.futureInterest === option.value 
                       ? 'bg-blue-100 border-blue-500 border-2 text-blue-700 font-medium shadow-md' 
                       : 'bg-gray-100 border border-gray-300 text-gray-700 hover:bg-gray-200'}`}>
-                      {option === 'yes' ? 'Definitely!' : option === 'no' ? 'Not likely' : 'Perhaps'}
+                      {option.label}
                     </div>
                   </label>
                 ))}
@@ -234,21 +238,21 @@ export default function FeedbackForm() {
                 onClick={prevStep}
                 className="text-gray-600 hover:text-gray-800 font-medium py-3 px-6 rounded-lg transition-all flex items-center gap-2"
               >
-                <span className="text-lg">←</span> Previous
+                <span className="text-lg">←</span> Wait, I Made A Mistake
               </button>
               <button 
                 type="button" 
                 onClick={nextStep}
                 className="bg-gradient-to-r from-blue-500 to-blue-700 hover:from-blue-600 hover:to-blue-800 text-white font-medium py-3 px-8 rounded-lg transition-all shadow-md hover:shadow-lg flex items-center gap-2"
               >
-                Next Step <span className="text-lg">→</span>
+                Keep Making Excuses <span className="text-lg">→</span>
               </button>
             </div>
           </div>
           
           <div className={`form-step ${activeStep === 3 ? 'block' : 'hidden'} ${animation}`}>
             <div className="mb-6">
-              <label htmlFor="improvements" className="block mb-2 text-gray-700 font-medium">How can we improve our trip offerings?</label>
+              <label htmlFor="improvements" className="block mb-2 text-gray-700 font-medium">What Would Make This Trip Good Enough For Your Majesty?</label>
               <textarea
                 id="improvements"
                 name="improvements"
@@ -256,12 +260,12 @@ export default function FeedbackForm() {
                 onChange={handleChange}
                 className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-400 focus:border-transparent transition-all"
                 rows="4"
-                placeholder="Your suggestions for improvement..."
+                placeholder="Let me guess... free WiFi and a personal butler?"
               ></textarea>
             </div>
             
             <div className="mb-8">
-              <p className="block mb-3 text-gray-700 font-medium">How would you rate our current trip offerings?</p>
+              <p className="block mb-3 text-gray-700 font-medium">Be Honest: How Great Is This Trip That You're Missing?</p>
               <div className="flex justify-between items-center bg-gray-50 p-4 rounded-xl">
                 {emojis.map((emoji, index) => (
                   <button
@@ -276,10 +280,10 @@ export default function FeedbackForm() {
               </div>
               {emojiRating !== null && (
                 <p className="text-center mt-2 text-sm text-gray-500">
-                  {emojiRating === 0 ? 'Very Disappointed' :
-                   emojiRating === 1 ? 'Not Great' :
-                   emojiRating === 2 ? 'Average' :
-                   emojiRating === 3 ? 'Good' : 'Excellent!'}
+                  {emojiRating === 0 ? 'It Looks Terrible (You Liar)' :
+                   emojiRating === 1 ? 'Not Great (Still Lying)' :
+                   emojiRating === 2 ? "Average (We Both Know It's Amazing)" :
+                   emojiRating === 3 ? "Good (It's Actually INCREDIBLE)" : "Excellent! (Now You're Being Honest)"}
                 </p>
               )}
             </div>
@@ -290,13 +294,13 @@ export default function FeedbackForm() {
                 onClick={prevStep}
                 className="text-gray-600 hover:text-gray-800 font-medium py-3 px-6 rounded-lg transition-all flex items-center gap-2"
               >
-                <span className="text-lg">←</span> Previous
+                <span className="text-lg">←</span> Wait, I'm Reconsidering
               </button>
               <button 
                 type="submit" 
                 className="bg-gradient-to-r from-green-500 to-blue-500 hover:from-green-600 hover:to-blue-600 text-white font-medium py-3 px-8 rounded-lg transition-all shadow-md hover:shadow-lg flex items-center gap-2"
               >
-                Submit Feedback <span className="text-lg">✓</span>
+                Submit My Shame <span className="text-lg">✓</span>
               </button>
             </div>
           </div>
@@ -323,25 +327,25 @@ export default function FeedbackForm() {
             </svg>
           </div>
           
-          <h2 className="text-4xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-green-600 to-blue-600">Thank You For Your Feedback!</h2>
-          <p className="text-lg mb-6 text-gray-700">We appreciate you taking the time to share your thoughts with us. Your input helps us create better travel experiences!</p>
+          <h2 className="text-4xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-green-600 to-blue-600">We've Recorded Your Excuses</h2>
+          <p className="text-lg mb-6 text-gray-700">Thanks for the feedback! We'll try not to laugh too hard at your "reasons" for missing out on the trip of a lifetime.</p>
         </div>
       </div>
       
       <div className="mt-10 space-y-5 text-center">
         <button 
-          onClick={() => router.push('/')}
+          onClick={() => router.push('/join-form')}
           className="bg-gradient-to-r from-blue-500 to-blue-700 hover:from-blue-600 hover:to-blue-800 text-white font-medium py-3 px-8 rounded-lg transition-all shadow-md hover:shadow-lg"
         >
-          Return to Homepage
+          Actually, I Changed My Mind - Sign Me Up!
         </button>
         
         <p className="block text-gray-500 mt-2">
-          Want to reconsider? <button 
-            onClick={() => router.push('/join-form')} 
+          <button 
+            onClick={() => router.push('/')} 
             className="text-blue-600 hover:text-blue-800 underline font-medium"
           >
-            Join our Kerala trip!
+            Go back and think about what you're missing
           </button>
         </p>
       </div>

@@ -8,75 +8,72 @@ export default function EnhancedBrochure() {
   const [isHovering, setIsHovering] = useState(false);
   const autoplayRef = useRef(null);
   
-  // Brochure pages content
+  // Brochure pages content with updated mocking tone
   const pages = [
     {
-      title: "Kerala: God's Own Country",
-      content: "Experience the magic of Kerala with our carefully curated 7-day adventure. From serene backwaters to lush hill stations, immerse yourself in the natural beauty and rich culture of this tropical paradise.",
+      title: "Stop Scrolling And Do Something",
+      content: "Instead of wasting another year of your life looking at other people's vacations, how about you actually experience something worth talking about for once? Our Kerala trip is better than whatever's in your sad social feed.",
       image: "/images/brochure/cover.jpg",
       isMainPage: true,
       bgColor: "bg-emerald-50"
     },
     {
-      title: "Day 1-2: Cochin & Fort Kochi",
-      content: "Begin your journey in the historic port city of Kochi. Explore the charming streets of Fort Kochi with its colonial architecture, Chinese fishing nets, and vibrant local markets. Experience a traditional Kathakali performance in the evening.",
+      title: "Day 1-2: Finally See Something Real",
+      content: "Your apartment walls are tired of your face. Start in Kochi, where you can pretend to be cultured as you discover architecture that's been around longer than your attention span. Your Instagram will actually be interesting for once.",
       image: "/images/brochure/kochi.jpg",
       highlights: [
-        "Visit the 16th-century Mattancherry Palace",
-        "Witness the iconic Chinese fishing nets at sunset",
-        "Explore the historic Jewish Synagogue",
-        "Enjoy authentic Kerala seafood cuisine"
+        "Visit historic places instead of the same coffee shop",
+        "See sunset views without adding a filter",
+        "Actually learn history not from Netflix",
+        "Eat real seafood, not frozen grocery store trash"
       ],
       bgColor: "bg-blue-50"
     },
     {
-      title: "Day 3-4: Alleppey Backwaters",
-      content: "Cruise through the tranquil backwaters of Alleppey on a traditional houseboat. Wind through narrow canals lined with coconut palms, passing villages and rice paddies. Experience the unique ecosystem and way of life on these waters.",
+      title: "Day 3-4: Water Better Than Your Bathtub",
+      content: "Put down your rubber duck and experience actual water. Float through Alleppey on a houseboat that makes your apartment look like the sad box it is. Maybe you'll finally relax instead of just saying you're going to.",
       image: "/images/brochure/alleppey.jpg",
       highlights: [
-        "Overnight stay on a luxury houseboat",
-        "Fresh seafood prepared by your private chef",
-        "Village visits and cultural interactions",
-        "Breathtaking sunset views over the backwaters"
+        "Sleep on a boat, not your secondhand mattress",
+        "Fresh seafood not from a delivery app",
+        "Meet people besides your same 3 friends",
+        "Sunsets more impressive than your screen saver"
       ],
       bgColor: "bg-teal-50"
     },
     {
-      title: "Day 5-6: Munnar Hill Station",
-      content: "Ascend to the cool heights of Munnar, surrounded by rolling hills of tea plantations. The fresh mountain air and stunning vistas offer a perfect contrast to the tropical lowlands. Explore tea estates and spot unique wildlife.",
+      title: "Day 5-6: Hills That Aren't Just Desktop Wallpapers",
+      content: "Yes, touching grass is an actual thing. Munnar's hills and tea plantations will make your sad house plant collection look even more pathetic. Breathe air that hasn't been recycled through your apartment's HVAC system.",
       image: "/images/brochure/munnar.jpg",
       highlights: [
-        "Tour of working tea plantations and factory",
-        "Hike through the Eravikulam National Park",
-        "Visit to the Mattupetty Dam and Echo Point",
-        "Experience the rare Neelakurinji flowers (if in bloom)"
+        "See how tea is actually made, not just steeped",
+        "Walk in nature without complaining about it",
+        "Views better than whatever you're watching on Netflix",
+        "See flowers that aren't from the grocery store"
       ],
       bgColor: "bg-green-50"
     },
     {
-      title: "Day 7: Ayurvedic Experience",
-      content: "Conclude your journey with a day dedicated to wellness in the tradition of Ayurveda, Kerala's ancient healing system. Rejuvenate your body and mind with traditional treatments using local herbs and techniques.",
+      title: "Day 7: Wellness Better Than Your App",
+      content: "End your trip with actual self-care, not just buying another scented candle. Experience Ayurveda, which has been working for thousands of years, unlike your fad diet that you'll quit next week.",
       image: "/images/brochure/ayurveda.jpg",
       highlights: [
-        "Personalized Ayurvedic consultation",
-        "Traditional massage and treatment session",
-        "Ayurvedic cooking demonstration",
-        "Farewell dinner with Kerala specialties"
+        "Real health advice, not from TikTok",
+        "Massages better than your foam roller",
+        "Learn cooking skills beyond microwaving",
+        "Final dinner better than your takeout ritual"
       ],
       bgColor: "bg-amber-50"
     },
     {
-      title: "Practical Information",
-      content: "Our trip departs on June 15, 2025. The package includes all accommodations, transportation within Kerala, most meals, and guided experiences. Group size is limited to 24 participants to ensure a personalized experience.",
+      title: "Stuff You Need To Know",
+      content: "We're leaving May first week. This trip includes everything you need because we know you can't plan your way out of a paper bag. Limited to 24 people so we don't have to deal with too many of you at once.",
       image: "/images/brochure/info.jpg",
       isInfoPage: true,
       details: [
-        "Price: $1,895 per person (double occupancy)",
-        "Single supplement: $450",
-        "Deposit: $500 (due at registration)",
-        "Full payment due: April 30, 2025",
-        "Climate: Warm and humid (24-32°C/75-90°F)",
-        "Recommended items: Light clothing, rain jacket, insect repellent"
+        "Price: Depending on Number of People (cheaper than your monthly takeout habit)",
+        "Weather: Warm and humid (24-32°C/75-90°F)",
+        "Pack: Light clothing, rain jacket, bug spray (duh)"
       ],
       bgColor: "bg-orange-50"
     }
@@ -127,7 +124,7 @@ export default function EnhancedBrochure() {
       <div className="flex justify-end mb-4">
         <button 
           onClick={togglePlayPause}
-          className="bg-green-600 text-white p-2 rounded-full hover:bg-green-700 transition mr-2"
+          className="bg-rose-600 text-white p-2 rounded-full hover:bg-rose-700 transition mr-2"
           aria-label={isPlaying ? "Pause slideshow" : "Play slideshow"}
         >
           {isPlaying ? (
@@ -159,7 +156,7 @@ export default function EnhancedBrochure() {
               alt={pages[currentPage].title} 
               className="w-full h-96 object-cover transition-transform duration-700 ease-in-out hover:scale-105"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+            <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
             
             {/* Page title overlay */}
             <h2 className="absolute bottom-8 left-8 text-3xl font-bold text-white drop-shadow-lg">
@@ -172,18 +169,18 @@ export default function EnhancedBrochure() {
             <button 
               onClick={prevPage}
               disabled={currentPage === 0}
-              className={`bg-white/80 backdrop-blur-sm p-3 rounded-full shadow-lg transform transition hover:scale-110 ${currentPage === 0 ? 'opacity-50 cursor-not-allowed' : 'hover:bg-white'}`}
+              className={`bg-white/90 backdrop-blur-sm p-3 rounded-full shadow-lg transform transition hover:scale-110 ${currentPage === 0 ? 'opacity-50 cursor-not-allowed' : 'hover:bg-white'}`}
             >
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-green-800" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-rose-800" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
               </svg>
             </button>
             <button 
               onClick={nextPage}
               disabled={currentPage === pages.length - 1}
-              className={`bg-white/80 backdrop-blur-sm p-3 rounded-full shadow-lg transform transition hover:scale-110 ${currentPage === pages.length - 1 ? 'opacity-50 cursor-not-allowed' : 'hover:bg-white'}`}
+              className={`bg-white/90 backdrop-blur-sm p-3 rounded-full shadow-lg transform transition hover:scale-110 ${currentPage === pages.length - 1 ? 'opacity-50 cursor-not-allowed' : 'hover:bg-white'}`}
             >
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-green-800" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-rose-800" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
               </svg>
             </button>
@@ -192,19 +189,19 @@ export default function EnhancedBrochure() {
         
         {/* Page content */}
         <div className="p-10">
-          <p className="mb-8 text-lg leading-relaxed">{pages[currentPage].content}</p>
+          <p className="mb-8 text-lg leading-relaxed text-gray-800">{pages[currentPage].content}</p>
           
           {/* Conditional rendering based on page type */}
           {pages[currentPage].highlights && (
-            <div className="mb-8 bg-white/50 p-6 rounded-xl shadow-inner">
-              <h3 className="font-bold text-xl mb-4 text-green-800 border-b border-green-200 pb-2">Highlights</h3>
+            <div className="mb-8 bg-white/60 p-6 rounded-xl shadow-inner">
+              <h3 className="font-bold text-xl mb-4 text-rose-800 border-b border-rose-200 pb-2">Things Your Feed Needs</h3>
               <ul className="grid grid-cols-1 md:grid-cols-2 gap-3">
                 {pages[currentPage].highlights.map((highlight, index) => (
                   <li key={index} className="flex items-start">
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-green-600 mr-2 mt-1 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-rose-600 mr-2 mt-1 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                     </svg>
-                    <span>{highlight}</span>
+                    <span className="text-gray-800">{highlight}</span>
                   </li>
                 ))}
               </ul>
@@ -212,15 +209,15 @@ export default function EnhancedBrochure() {
           )}
           
           {pages[currentPage].details && (
-            <div className="mb-8 bg-white/50 p-6 rounded-xl shadow-inner">
-              <h3 className="font-bold text-xl mb-4 text-green-800 border-b border-green-200 pb-2">Trip Details</h3>
+            <div className="mb-8 bg-white/60 p-6 rounded-xl shadow-inner">
+              <h3 className="font-bold text-xl mb-4 text-rose-800 border-b border-rose-200 pb-2">The Fine Print</h3>
               <ul className="grid grid-cols-1 md:grid-cols-2 gap-3">
                 {pages[currentPage].details.map((detail, index) => (
                   <li key={index} className="flex items-start">
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-green-600 mr-2 mt-1 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-rose-600 mr-2 mt-1 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                     </svg>
-                    <span>{detail}</span>
+                    <span className="text-gray-800">{detail}</span>
                   </li>
                 ))}
               </ul>
@@ -228,21 +225,21 @@ export default function EnhancedBrochure() {
           )}
           
           {pages[currentPage].isMainPage && (
-            <div className="mt-8 text-center py-6 bg-white/50 rounded-xl shadow-inner">
-              <span className="text-3xl font-bold text-green-700">Kerala Adventure 2025</span>
-              <p className="mt-3 text-gray-700 text-lg">June 15-21, 2025</p>
+            <div className="mt-8 text-center py-6 bg-white/60 rounded-xl shadow-inner">
+              <span className="text-3xl font-bold text-rose-700">Stop Being Boring in 2025</span>
+              <p className="mt-3 text-gray-700 text-lg">May first week</p>
               <div className="mt-4 flex justify-center">
-                <span className="inline-block bg-green-100 text-green-800 px-4 py-2 rounded-full text-sm font-medium">Limited Spots Available</span>
+                <span className="inline-block bg-rose-100 text-rose-800 px-4 py-2 rounded-full text-sm font-medium">Your Friends Are Already Going</span>
               </div>
             </div>
           )}
           
           {pages[currentPage].isInfoPage && (
             <div className="mt-8 text-center">
-              <button className="bg-green-600 text-white px-8 py-3 rounded-lg text-lg font-semibold hover:bg-green-700 transition transform hover:scale-105 shadow-lg">
-                Reserve Your Spot
+              <button className="bg-rose-600 text-white px-8 py-3 rounded-lg text-lg font-semibold hover:bg-rose-700 transition transform hover:scale-105 shadow-lg">
+                Fine, I'll Join
               </button>
-              <p className="mt-4 text-gray-600">Contact us at travel@keraladventures.com</p>
+              <p className="mt-4 text-gray-600">Or email try.something.new@keraladventures.com</p>
             </div>
           )}
         </div>
@@ -256,7 +253,7 @@ export default function EnhancedBrochure() {
             onClick={() => goToPage(index)}
             className={`w-4 h-4 rounded-full transition-all duration-300 ${
               currentPage === index 
-                ? 'bg-green-600 scale-125' 
+                ? 'bg-rose-600 scale-125' 
                 : 'bg-gray-300 hover:bg-gray-400'
             }`}
             aria-label={`Go to page ${index + 1}`}
@@ -267,7 +264,7 @@ export default function EnhancedBrochure() {
       {/* Progress bar */}
       <div className="mt-4 bg-gray-200 rounded-full h-1 max-w-md mx-auto overflow-hidden">
         <div 
-          className="bg-green-600 h-full transition-all duration-300 ease-out"
+          className="bg-rose-600 h-full transition-all duration-300 ease-out"
           style={{ width: `${((currentPage + 1) / pages.length) * 100}%` }}
         />
       </div>

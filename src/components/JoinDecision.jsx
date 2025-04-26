@@ -60,41 +60,39 @@ export default function JoinDecision() {
   return (
     <section className="py-16 bg-green-50">
       <div className="container mx-auto px-4 text-center">
-        <h2 className="text-3xl font-bold mb-8">Ready for the adventure of a lifetime?</h2>
+        <h2 className="text-3xl font-bold mb-3">The Decision That Will Define Your Entire Summer</h2>
+        <p className="text-gray-600 max-w-2xl mx-auto mb-8">
+          Time is running out and someone (you) still hasn't committed to our epic trip. We've waited long enough. What's your answer?
+        </p>
         
-        {/* Countdown Timer */}
-        <div className="mb-10">
-          <p className="text-lg mb-4">Trip departure in:</p>
+        <div className="mb-8 p-6 bg-white rounded-lg shadow-md">
+          <h3 className="text-xl font-bold mb-3 text-green-700">Trip Countdown Timer</h3>
+          <p className="mb-4">The trip starts with or without your indecisive self in:</p>
           <div className="flex justify-center gap-4">
-            <div className="bg-white rounded-lg shadow-md p-4 w-24">
-              <div className="text-3xl font-bold text-green-600">{countdown.days}</div>
-              <div className="text-gray-500">Days</div>
+            <div className="bg-green-100 p-3 rounded-lg w-20">
+              <div className="text-3xl font-bold text-green-800">{countdown.days}</div>
+              <div className="text-sm text-green-600">Days</div>
             </div>
-            <div className="bg-white rounded-lg shadow-md p-4 w-24">
-              <div className="text-3xl font-bold text-green-600">{countdown.hours}</div>
-              <div className="text-gray-500">Hours</div>
+            <div className="bg-green-100 p-3 rounded-lg w-20">
+              <div className="text-3xl font-bold text-green-800">{countdown.hours}</div>
+              <div className="text-sm text-green-600">Hours</div>
             </div>
-            <div className="bg-white rounded-lg shadow-md p-4 w-24">
-              <div className="text-3xl font-bold text-green-600">{countdown.minutes}</div>
-              <div className="text-gray-500">Minutes</div>
+            <div className="bg-green-100 p-3 rounded-lg w-20">
+              <div className="text-3xl font-bold text-green-800">{countdown.minutes}</div>
+              <div className="text-sm text-green-600">Minutes</div>
             </div>
-            <div className="bg-white rounded-lg shadow-md p-4 w-24">
-              <div className="text-3xl font-bold text-green-600">{countdown.seconds}</div>
-              <div className="text-gray-500">Seconds</div>
+            <div className="bg-green-100 p-3 rounded-lg w-20">
+              <div className="text-3xl font-bold text-green-800">{countdown.seconds}</div>
+              <div className="text-sm text-green-600">Seconds</div>
             </div>
           </div>
         </div>
         
-        <p className="text-xl mb-4">Join our Kerala trip and create memories that will last forever</p>
-        <p className="mb-8 text-gray-600">Limited spots available! Reserve yours before they're gone.</p>
-        
         {isRegistered ? (
-          <div className="bg-green-100 border border-green-300 rounded-lg p-6 max-w-md mx-auto">
-            <p className="text-lg font-medium text-green-700">
-              You're all set for the trip! We can't wait to see you in Kerala.
-            </p>
-            <p className="mt-2 text-green-600">
-              Check your email for trip updates and preparation tips.
+          <div className="bg-green-100 p-6 rounded-lg border border-green-300">
+            <div className="text-2xl font-bold text-green-700 mb-2">You're In! (Finally made a good decision)</div>
+            <p className="text-gray-700">
+              Congratulations on not being lame! Pack your bags and prepare for the adventure of a lifetime. We'll send details to your email shortly.
             </p>
           </div>
         ) : (
@@ -103,13 +101,13 @@ export default function JoinDecision() {
               onClick={handleYesClick}
               className="bg-green-600 text-white px-10 py-3 rounded-full hover:bg-green-700 transition"
             >
-              Yes, I'm In!
+              Yes, I'm Not A Loser!
             </button>
             <button 
               onClick={handleNoClick}
               className="bg-white border border-green-600 text-green-600 px-10 py-3 rounded-full hover:bg-gray-100 transition"
             >
-              Not Sure Yet
+              I Need More Convincing
             </button>
           </div>
         )}
@@ -118,15 +116,15 @@ export default function JoinDecision() {
         <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-4">
           <div className="bg-white rounded-lg shadow-sm p-4">
             <div className="text-2xl font-bold text-green-600">7 Days</div>
-            <div className="text-gray-700">of exploration</div>
+            <div className="text-gray-700">of memories you'll miss</div>
           </div>
           <div className="bg-white rounded-lg shadow-sm p-4">
             <div className="text-2xl font-bold text-green-600">12+ Experiences</div>
-            <div className="text-gray-700">to cherish</div>
+            <div className="text-gray-700">your boring life needs</div>
           </div>
           <div className="bg-white rounded-lg shadow-sm p-4">
             <div className="text-2xl font-bold text-green-600">24 Travelers</div>
-            <div className="text-gray-700">maximum group size</div>
+            <div className="text-gray-700">who will talk about this forever</div>
           </div>
         </div>
       </div>

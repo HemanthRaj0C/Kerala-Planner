@@ -90,7 +90,7 @@ export default function JoinForm() {
   };
   
   return (
-    <main className="min-h-screen bg-gradient-to-b from-green-50 to-white">
+    <main className="min-h-screen bg-gradient-to-b from-green-50 to-white text-black">
       <Header onLoginClick={() => setIsLoginModalOpen(true)}/>
       
       <section className="py-16 relative">
@@ -113,8 +113,8 @@ export default function JoinForm() {
         <div className="container mx-auto px-4 py-24">
           {!isSubmitted ? (
             <>
-              <h1 className="text-4xl font-bold text-center mb-4 text-transparent bg-clip-text bg-gradient-to-r from-green-600 to-emerald-500">Join Our Kerala Adventure</h1>
-              <p className="text-center text-gray-600 mb-10 max-w-2xl mx-auto">Embark on an unforgettable journey through God's Own Country</p>
+              <h1 className="text-4xl font-bold text-center mb-4 text-transparent bg-clip-text bg-gradient-to-r from-green-600 to-emerald-500">Finally Showing Some Intelligence!</h1>
+              <p className="text-center text-gray-600 mb-10 max-w-2xl mx-auto">Fill out this form so you don't miss the trip everyone will be talking about for years</p>
               
               <div className="max-w-3xl mx-auto bg-white rounded-2xl shadow-xl overflow-hidden relative">
                 <div className="bg-gradient-to-r from-green-500 to-teal-500 p-4 relative">
@@ -125,7 +125,7 @@ export default function JoinForm() {
                           {i + 1}
                         </div>
                         <span className="mt-1 text-xs text-white">
-                          {i === 0 ? 'Personal' : i === 1 ? 'Travel' : 'Preferences'}
+                          {i === 0 ? 'Who Are You?' : i === 1 ? 'When You Coming?' : 'Don\'t Be Boring'}
                         </span>
                       </div>
                     ))}
@@ -142,9 +142,9 @@ export default function JoinForm() {
                 
                 <form onSubmit={handleSubmit} className="p-6 md:p-8">
                   <div className={`form-step ${activeStep === 1 ? 'block' : 'hidden'} ${animation}`}>
-                    <h2 className="text-2xl font-semibold mb-6 text-gray-800">Tell us about yourself</h2>
+                    <h2 className="text-2xl font-semibold mb-6 text-gray-800">Your Basic Info (We Promise Not to Stalk You)</h2>
                     <div className="mb-6">
-                      <label htmlFor="name" className="block mb-2 text-gray-700 font-medium">Full Name</label>
+                      <label htmlFor="name" className="block mb-2 text-gray-700 font-medium">Your Name (The One on Your ID)</label>
                       <input
                         type="text"
                         id="name"
@@ -152,13 +152,13 @@ export default function JoinForm() {
                         value={formData.name}
                         onChange={handleChange}
                         className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-400 focus:border-transparent transition-all"
-                        placeholder="Enter your full name"
+                        placeholder="The name your parents gave you"
                         required
                       />
                     </div>
                     
                     <div className="mb-6">
-                      <label htmlFor="email" className="block mb-2 text-gray-700 font-medium">Email Address</label>
+                      <label htmlFor="email" className="block mb-2 text-gray-700 font-medium">Email (That You Actually Check)</label>
                       <input
                         type="email"
                         id="email"
@@ -166,13 +166,13 @@ export default function JoinForm() {
                         value={formData.email}
                         onChange={handleChange}
                         className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-400 focus:border-transparent transition-all"
-                        placeholder="your.email@example.com"
+                        placeholder="not.your.spam.email@please.com"
                         required
                       />
                     </div>
                     
                     <div className="mb-6">
-                      <label htmlFor="phone" className="block mb-2 text-gray-700 font-medium">Phone Number</label>
+                      <label htmlFor="phone" className="block mb-2 text-gray-700 font-medium">Phone Number (The One You Actually Answer)</label>
                       <div className="relative">
                         <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
                           <svg className="w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -186,7 +186,7 @@ export default function JoinForm() {
                           value={formData.phone}
                           onChange={handleChange}
                           className="w-full p-3 pl-10 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-400 focus:border-transparent transition-all"
-                          placeholder="+1 (123) 456-7890"
+                          placeholder="So we can call when you're late"
                           required
                         />
                       </div>
@@ -199,15 +199,15 @@ export default function JoinForm() {
                         disabled={!getStepValidation(1)}
                         className={`bg-gradient-to-r from-green-500 to-teal-500 hover:from-green-600 hover:to-teal-600 text-white font-medium py-3 px-8 rounded-lg transition-all shadow-md hover:shadow-lg flex items-center gap-2 ml-auto ${!getStepValidation(1) ? 'opacity-50 cursor-not-allowed' : ''}`}
                       >
-                        Continue <span className="text-lg">→</span>
+                        Keep Going, You're Doing Great <span className="text-lg">→</span>
                       </button>
                     </div>
                   </div>
                   
                   <div className={`form-step ${activeStep === 2 ? 'block' : 'hidden'} ${animation}`}>
-                    <h2 className="text-2xl font-semibold mb-6 text-gray-800">Travel Details</h2>
+                    <h2 className="text-2xl font-semibold mb-6 text-gray-800">Travel Details (Clear Your Calendar)</h2>
                     <div className="mb-6">
-                      <label htmlFor="preferredDates" className="block mb-2 text-gray-700 font-medium">Preferred Travel Dates</label>
+                      <label htmlFor="preferredDates" className="block mb-2 text-gray-700 font-medium">When Can You Grace Us With Your Presence?</label>
                       <div className="relative">
                         <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
                           <svg className="w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -221,15 +221,15 @@ export default function JoinForm() {
                           value={formData.preferredDates}
                           onChange={handleChange}
                           className="w-full p-3 pl-10 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-400 focus:border-transparent transition-all"
-                          placeholder="e.g., May 15-30, 2025"
+                          placeholder="e.g., May 15-30, 2025 (or whenever, we're flexible)"
                           required
                         />
                       </div>
-                      <p className="text-xs text-gray-500 mt-1">Flexibility with dates? Let us know in the special requirements.</p>
+                      <p className="text-xs text-gray-500 mt-1">Just don't say "I'll think about it." We know what that means.</p>
                     </div>
                     
                     <div className="mb-6">
-                      <label htmlFor="numberOfTravelers" className="block mb-2 text-gray-700 font-medium">Number of Travelers</label>
+                      <label htmlFor="numberOfTravelers" className="block mb-2 text-gray-700 font-medium">How Many Friends Are You Actually Able to Convince?</label>
                       <div className="flex items-center">
                         <button 
                           type="button"
@@ -257,13 +257,13 @@ export default function JoinForm() {
                           <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 4v16m8-8H4"></path></svg>
                         </button>
                         <span className="ml-3 text-gray-700">
-                          {formData.numberOfTravelers === 1 ? 'Person' : 'People'}
+                          {formData.numberOfTravelers === 1 ? 'Just You? Seriously?' : 'People'}
                         </span>
                       </div>
                     </div>
                     
                     <div className="mb-6">
-                      <label htmlFor="specialRequirements" className="block mb-2 text-gray-700 font-medium">Special Requirements</label>
+                      <label htmlFor="specialRequirements" className="block mb-2 text-gray-700 font-medium">Your High-Maintenance Requests</label>
                       <textarea
                         id="specialRequirements"
                         name="specialRequirements"
@@ -271,7 +271,7 @@ export default function JoinForm() {
                         onChange={handleChange}
                         className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-400 focus:border-transparent transition-all"
                         rows="3"
-                        placeholder="Accessibility needs, dietary restrictions, etc."
+                        placeholder="Dietary restrictions, need for constant Wi-Fi, can't walk more than 3 steps..."
                       ></textarea>
                     </div>
                     
@@ -281,7 +281,7 @@ export default function JoinForm() {
                         onClick={prevStep}
                         className="text-gray-600 hover:text-gray-800 font-medium py-3 px-6 rounded-lg transition-all flex items-center gap-2"
                       >
-                        <span className="text-lg">←</span> Previous
+                        <span className="text-lg">←</span> Wait I Made a Mistake
                       </button>
                       <button 
                         type="button" 
@@ -289,14 +289,14 @@ export default function JoinForm() {
                         disabled={!getStepValidation(2)}
                         className={`bg-gradient-to-r from-green-500 to-teal-500 hover:from-green-600 hover:to-teal-600 text-white font-medium py-3 px-8 rounded-lg transition-all shadow-md hover:shadow-lg flex items-center gap-2 ${!getStepValidation(2) ? 'opacity-50 cursor-not-allowed' : ''}`}
                       >
-                        Continue <span className="text-lg">→</span>
+                        Almost Done <span className="text-lg">→</span>
                       </button>
                     </div>
                   </div>
                   
                   <div className={`form-step ${activeStep === 3 ? 'block' : 'hidden'} ${animation}`}>
-                    <h2 className="text-2xl font-semibold mb-6 text-gray-800">Your Interests</h2>
-                    <p className="text-gray-600 mb-6">Help us customize your Kerala experience by selecting what interests you the most</p>
+                    <h2 className="text-2xl font-semibold mb-6 text-gray-800">Tell Us What You Actually Like</h2>
+                    <p className="text-gray-600 mb-6">Let's see if your interests are as basic as we think they are</p>
                     
                     <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mb-8">
                       {availableInterests.map(interest => (
@@ -316,7 +316,7 @@ export default function JoinForm() {
                     </div>
                     
                     <div className="mb-6">
-                      <label htmlFor="expectations" className="block mb-2 text-gray-700 font-medium">What are you most excited about?</label>
+                      <label htmlFor="expectations" className="block mb-2 text-gray-700 font-medium">What Are You Hoping To Brag About Later?</label>
                       <textarea
                         id="expectations"
                         name="expectations"
@@ -324,7 +324,7 @@ export default function JoinForm() {
                         onChange={handleChange}
                         className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-400 focus:border-transparent transition-all"
                         rows="3"
-                        placeholder="Tell us what you're looking forward to the most..."
+                        placeholder="Be honest, we know it's for the Instagram photos..."
                       ></textarea>
                     </div>
                     
@@ -334,13 +334,13 @@ export default function JoinForm() {
                         onClick={prevStep}
                         className="text-gray-600 hover:text-gray-800 font-medium py-3 px-6 rounded-lg transition-all flex items-center gap-2"
                       >
-                        <span className="text-lg">←</span> Previous
+                        <span className="text-lg">←</span> Wait, Not Yet
                       </button>
                       <button 
                         type="submit" 
                         className="bg-gradient-to-r from-green-500 to-teal-500 hover:from-green-600 hover:to-teal-600 text-white font-medium py-3 px-8 rounded-lg transition-all shadow-md hover:shadow-lg flex items-center gap-2"
                       >
-                        Submit and Join <span className="text-lg">✓</span>
+                        I'm In, You Convinced Me! <span className="text-lg">✓</span>
                       </button>
                     </div>
                   </div>
@@ -359,28 +359,28 @@ export default function JoinForm() {
                     </svg>
                   </div>
                   
-                  <h2 className="text-4xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-green-600 to-teal-600">You're All Set!</h2>
-                  <p className="text-lg mb-6 text-gray-700">Thank you for joining our Kerala adventure!</p>
-                  <p className="mb-6">We've received your details and will be in touch soon with more information about the trip.</p>
+                  <h2 className="text-4xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-green-600 to-teal-600">FINALLY! GOOD CHOICE!</h2>
+                  <p className="text-lg mb-6 text-gray-700">You've made the smartest decision of your year!</p>
+                  <p className="mb-6">We knew you'd come around eventually. Your friends will be so impressed that you actually did something cool for once.</p>
                   
                   <div className="bg-white p-6 rounded-xl shadow-inner mt-8">
-                    <h3 className="text-xl font-bold mb-4 text-gray-800">What's Next?</h3>
+                    <h3 className="text-xl font-bold mb-4 text-gray-800">What Happens Now:</h3>
                     <ol className="list-none pl-0 text-left mb-8 space-y-4">
                       <li className="flex items-start gap-3">
                         <span className="flex items-center justify-center w-8 h-8 bg-green-100 rounded-full text-green-700 font-bold shrink-0">1</span>
-                        <span>Check your email for a confirmation from our team</span>
+                        <span>Check your email (yes, actually check it) for confirmation details</span>
                       </li>
                       <li className="flex items-start gap-3">
                         <span className="flex items-center justify-center w-8 h-8 bg-green-100 rounded-full text-green-700 font-bold shrink-0">2</span>
-                        <span>Complete your payment to secure your spot</span>
+                        <span>Send us money (we know, we know, but it's worth it)</span>
                       </li>
                       <li className="flex items-start gap-3">
                         <span className="flex items-center justify-center w-8 h-8 bg-green-100 rounded-full text-green-700 font-bold shrink-0">3</span>
-                        <span>Join our pre-trip orientation session (details to follow)</span>
+                        <span>Attend our pre-trip meetup (don't be that person who skips it)</span>
                       </li>
                       <li className="flex items-start gap-3">
                         <span className="flex items-center justify-center w-8 h-8 bg-green-100 rounded-full text-green-700 font-bold shrink-0">4</span>
-                        <span>Pack your bags and get ready for an unforgettable adventure!</span>
+                        <span>Actually pack properly for once in your life (we'll send a list)</span>
                       </li>
                     </ol>
                   </div>
@@ -392,7 +392,7 @@ export default function JoinForm() {
                 className="bg-gradient-to-r from-green-500 to-teal-500 hover:from-green-600 hover:to-teal-600 text-white font-medium py-3 px-8 rounded-lg transition-all shadow-md hover:shadow-lg inline-flex items-center gap-2"
               >
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path></svg>
-                Return to Home
+                Go Tell Everyone You're Coming
               </button>
             </div>
           )}

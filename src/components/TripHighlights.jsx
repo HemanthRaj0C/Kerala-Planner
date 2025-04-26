@@ -10,61 +10,61 @@ export default function TripHighlights() {
     nature: [
       {
         title: 'Alleppey Backwaters',
-        description: 'Experience the serene beauty of Kerala\'s backwaters on a traditional houseboat.',
+        description: 'Float like royalty on a luxury houseboat while your Instagram followers seethe with jealousy.',
         image: '/images/highlights/backwaters.jpg',
-        facts: ['Over 900 km of interconnected waterways', 'Known as the "Venice of the East"', 'Home to diverse aquatic life']
+        facts: ['Better than ANY puddle you\'ve ever seen near your home', 'Your apartment looks like a trash can compared to these houseboats', 'Your dating profile needs these photos desperately']
       },
       {
         title: 'Munnar Tea Plantations',
-        description: 'Explore lush tea gardens set against the backdrop of the Western Ghats.',
+        description: 'Those sad tea bags in your kitchen cabinet? This is where REAL tea comes from, you uncultured swine.',
         image: '/images/highlights/munnar.jpg',
-        facts: ['Situated at 1,600 meters above sea level', 'Home to the endangered Nilgiri Tahr', 'Tea plantations established in the late 19th century']
+        facts: ['Views so good they\'ll break your phone\'s camera', 'The air smells better than your entire neighborhood', 'You\'ll never respect your grocery store tea again']
       },
       {
         title: 'Periyar Wildlife Sanctuary',
-        description: 'Spot elephants, tigers, and other wildlife in their natural habitat.',
+        description: 'See actual wild tigers instead of those sad zoo cats you usually pretend to enjoy.',
         image: '/images/highlights/periyar.jpg',
-        facts: ['Covers an area of 925 sq km', 'Home to over 35 species of mammals', 'Known for bamboo raft safaris']
+        facts: ['Watch elephants living their best life while you\'re still figuring out yours', 'No glass barriers like your pathetic local zoo', 'Animals that are more interesting than your current friends']
       }
     ],
     culture: [
       {
         title: 'Kathakali Performances',
-        description: 'Witness this classical dance form known for its elaborate costumes and makeup.',
+        description: 'Witness performers who trained for a DECADE while you can\'t even commit to a full season of any TV show.',
         image: '/images/highlights/kathakali.jpg',
-        facts: ['Originated in the 17th century', 'Performers train for 8-10 years', 'Each facial expression has a specific meaning']
+        facts: ['More colorful than your entire personality', 'Performers with more talent in their pinky than you have in your entire body', 'Actually worth putting your phone down for once']
       },
       {
         title: 'Fort Kochi',
-        description: 'Walk through the historic streets with influences from Portuguese, Dutch, and British colonizers.',
+        description: 'Walk streets that are actually historically significant, not like your suburb from the 1980s that you think is "vintage."',
         image: '/images/highlights/fort-kochi.jpg',
-        facts: ['Chinese fishing nets date back to the 14th century', 'Home to the oldest European church in India', 'Was a major spice trading center']
+        facts: ['Fishing techniques older than your country', 'Colonial architecture that puts your IKEA furniture to absolute shame', 'Your history teacher would be ashamed you almost missed this']
       },
       {
         title: 'Thrissur Pooram Festival',
-        description: 'Experience Kerala\'s most famous temple festival with elaborate elephant processions.',
+        description: 'A festival that makes your local parade look like a sad birthday party for a forgotten hamster.',
         image: '/images/highlights/thrissur.jpg',
-        facts: ['Features over 30 caparisoned elephants', 'Famous for its percussion ensembles', 'Tradition dating back to the late 18th century']
+        facts: ['Elephants dressed better than you on your best day', 'Drums that will make your Spotify playlist sound like amateur hour', 'The only thing that might make you interesting at parties']
       }
     ],
     wellness: [
       {
         title: 'Ayurvedic Treatments',
-        description: 'Rejuvenate your body and mind with traditional Ayurvedic therapies.',
+        description: 'Experience actual ancient healing while you usually just pop Advil and hope your problems go away.',
         image: '/images/highlights/ayurveda.jpg',
-        facts: ['Kerala is known as the birthplace of Ayurveda', 'Treatments use herbs and oils from the Western Ghats', 'Some therapies date back over 5,000 years']
+        facts: ['Treatments that make your bubble bath look absolutely pathetic', '5,000 years of wisdom vs. your WebMD searches', 'You\'ll never respect your local strip mall "spa" again']
       },
       {
         title: 'Yoga Retreats',
-        description: 'Practice yoga and meditation in Kerala\'s tranquil natural settings.',
+        description: 'Practice yoga where it was meant to be done, not in your stuffy apartment between the couch and that pile of laundry.',
         image: '/images/highlights/yoga.jpg',
-        facts: ['Combines traditional techniques with natural surroundings', 'Courses available for beginners to advanced practitioners', 'Often incorporates local healing traditions']
+        facts: ['Poses with views that destroy your living room scenery', 'Actual peace and quiet without your neighbor\'s terrible music', 'Instructors who won\'t judge your terrible form (at least not to your face)']
       },
       {
         title: 'Wellness Cuisine',
-        description: 'Savor nutritious and delicious plant-based Kerala cuisine.',
+        description: 'Eat food that\'s both healthy AND delicious, not your sad desk salad or "healthy" frozen dinners for one.',
         image: '/images/highlights/cuisine.jpg',
-        facts: ['Rich in coconut, spices, and fresh vegetables', 'Many dishes have medicinal properties', 'Emphasizes seasonal and local ingredients']
+        facts: ['Spices you can\'t even pronounce but will pretend to know later', 'Food that\'s Instagram-worthy without 17 filters', 'Zero chance of getting delivery from this cuisine at your sad apartment']
       }
     ]
   };
@@ -77,19 +77,19 @@ export default function TripHighlights() {
           className={`px-6 py-3 font-medium ${activeCategory === 'nature' ? 'text-green-600 border-b-2 border-green-600' : 'text-gray-500 hover:text-green-600'}`}
           onClick={() => setActiveCategory('nature')}
         >
-          Nature & Wildlife
+          Nature You're Missing Out On
         </button>
         <button 
           className={`px-6 py-3 font-medium ${activeCategory === 'culture' ? 'text-green-600 border-b-2 border-green-600' : 'text-gray-500 hover:text-green-600'}`}
           onClick={() => setActiveCategory('culture')}
         >
-          Culture & Heritage
+          Culture You Desperately Need
         </button>
         <button 
           className={`px-6 py-3 font-medium ${activeCategory === 'wellness' ? 'text-green-600 border-b-2 border-green-600' : 'text-gray-500 hover:text-green-600'}`}
           onClick={() => setActiveCategory('wellness')}
         >
-          Wellness & Relaxation
+          Wellness Your Sad Life Requires
         </button>
       </div>
       
@@ -104,7 +104,7 @@ export default function TripHighlights() {
               <h3 className="text-xl font-bold mb-2">{highlight.title}</h3>
               <p className="text-gray-700 mb-4">{highlight.description}</p>
               <div className="border-t pt-4">
-                <h4 className="font-bold mb-2">Quick Facts:</h4>
+                <h4 className="font-bold mb-2">Brutal Truths:</h4>
                 <ul className="list-disc pl-5 space-y-1">
                   {highlight.facts.map((fact, factIndex) => (
                     <li key={factIndex} className="text-sm text-gray-600">{fact}</li>
@@ -118,9 +118,9 @@ export default function TripHighlights() {
       
       {/* Call to Action */}
       <div className="text-center mt-10">
-        <p className="text-lg mb-4">These are just a few highlights of what awaits you in God's Own Country</p>
+        <p className="text-lg mb-4">And this is just the stuff we can tell you about without embarrassing you further</p>
         <button className="bg-green-600 text-white px-6 py-3 rounded hover:bg-green-700 transition">
-          Explore Full Itinerary
+          See What Else Your Boring Life Is Missing
         </button>
       </div>
     </div>

@@ -31,47 +31,44 @@ export default function MaleExperience() {
   // Experience packages data
   const packages = [
     {
-      title: "Adventure & Exploration",
-      description: "Push your limits with challenging treks, rafting, and guided adventures in Kerala's most breathtaking landscapes.",
+      title: "Epic Bro Adventures",
+      description: "Activities that will make your Instagram followers weep with jealousy while you're out here living your best life.",
       features: [
-        "Multi-day trek through Western Ghats",
-        "White water rafting on mountain rivers",
-        "Rock climbing with experienced guides",
-        "Wildlife safari and photography sessions",
-        "Mountain biking through spice plantations",
-        "Overnight camping in scenic locations"
+        "Trek that will make your gym workout look pathetic",
+        "Rafting that'll give you stories to brag about forever",
+        "Rock climbing that'll get you those muscles you pretend to have",
+        "Wildlife photos that'll actually get you matches on dating apps",
+        "Mountain biking that doesn't involve your lame stationary bike",
+        "Camping in places your phone can't even find on Google Maps"
       ],
-      price: 1499,
       duration: "8 days",
       image: "/images/male-experience/adventure.jpg"
     },
     {
-      title: "Cultural Immersion",
-      description: "Experience authentic Kerala through its martial arts, cuisine, music, and historical traditions.",
+      title: "Culture That Actually Makes You Interesting",
+      description: "Finally have something better to talk about than your fantasy football league or that one time you went to Cancun.",
       features: [
-        "Kalaripayattu martial arts training",
-        "Traditional percussion lessons",
-        "Historical tours with expert guides",
-        "Cooking classes with local chefs",
-        "Temple rituals and cultural ceremonies",
-        "Artisan workshops and craft sessions"
+        "Learn fighting skills that'll impress everyone at the bar",
+        "Master percussion beats that aren't just air drumming",
+        "Historical knowledge to sound smart on your next date",
+        "Cooking skills beyond microwaving frozen burritos",
+        "Temple ceremonies cooler than anything on your Netflix queue",
+        "Arts and crafts that aren't embarrassingly bad"
       ],
-      price: 1199,
       duration: "6 days",
       image: "/images/male-experience/cultural.jpg"
     },
     {
-      title: "Wellness & Rejuvenation",
-      description: "Restore balance and energy through traditional Ayurvedic treatments specifically designed for men.",
+      title: "Man Spa (But Actually Cool)",
+      description: "Wellness treatments that are totally masculine and will fix your disgusting posture and diet once and for all.",
       features: [
-        "Personalized Ayurvedic consultation",
-        "Daily yoga and meditation sessions",
-        "Specialized male wellness treatments",
-        "Nutritional coaching and diet planning",
-        "Steam therapy and herbal treatments",
-        "Stress management techniques"
+        "Health consultation to find out why you're always tired",
+        "Yoga that won't make you pull a muscle this time",
+        "Treatments specifically designed for your neglected body",
+        "Diet planning because protein shakes aren't a food group",
+        "Steam therapy to sweat out years of bad decisions",
+        "Stress techniques for when you rage-quit video games"
       ],
-      price: 1399,
       duration: "7 days",
       image: "/images/male-experience/wellness.jpg"
     }
@@ -80,31 +77,31 @@ export default function MaleExperience() {
   // Workshops data
   const workshops = [
     {
-      title: "Traditional Martial Arts",
+      title: "Fighting That Impresses People",
       instructor: "Master Vishnu",
       duration: "3 hours",
-      description: "Learn the basics of Kalaripayattu, one of the oldest martial art forms in the world, with focus on postures and movements.",
+      description: "Learn ancient martial arts so you can stop claiming you 'know a guy who knows MMA' and actually have some skills yourself.",
       image: "/images/male-experience/martial-arts.jpg"
     },
     {
-      title: "Wilderness Survival",
+      title: "Survival Skills For When The Internet Dies",
       instructor: "Ranger Suresh",
       duration: "4 hours",
-      description: "Master essential survival skills in the wild: fire-making, shelter building, water sourcing, and navigation techniques.",
+      description: "Master skills you falsely claim to have on dating profiles: fire-making, building shelter, finding water, not getting hopelessly lost.",
       image: "/images/male-experience/wilderness.jpg"
     },
     {
-      title: "Traditional Fishing",
+      title: "Catching Actual Fish, Not Just Stories",
       instructor: "Captain Manu",
       duration: "5 hours",
-      description: "Join local fishermen to learn traditional net casting, spear fishing, and sustainable fishing practices in the backwaters.",
+      description: "Learn to fish for real so your 'the one that got away' stories will finally have some truth to them for once.",
       image: "/images/male-experience/fishing.jpg"
     },
     {
-      title: "Percussion Masterclass",
+      title: "Music Skills Beyond Air Guitar",
       instructor: "Guru Prasad",
       duration: "2 hours",
-      description: "Experience the rhythms of Kerala through an introductory class on traditional percussion instruments like Chenda and Maddalam.",
+      description: "Finally learn to play real instruments instead of just claiming you 'used to be in a band' every time music comes up in conversation.",
       image: "/images/male-experience/percussion.jpg"
     }
   ];
@@ -113,38 +110,38 @@ export default function MaleExperience() {
   const itinerary = [
     {
       day: 1,
-      title: "Arrival & Orientation",
-      activities: ["Airport pickup", "Welcome ceremony", "Resort check-in", "Introduction to guides", "Evening bonfire and briefing"],
-      highlight: "Welcome ritual with traditional warrior blessing"
+      title: "Arrival Without Your Lame Excuses",
+      activities: ["Airport pickup (we won't leave you behind)", "Welcome ceremony (try not to embarrass yourself)", "Resort check-in (nicer than your apartment)", "Meet guides (who'll save you when you get lost)", "Evening bonfire to shame the non-attendees"],
+      highlight: "Welcome ritual where we drink to those too boring to join"
     },
     {
       day: 2,
-      title: "Adventure Initiation",
-      activities: ["Early morning yoga", "Trekking basics workshop", "Short trail hike", "Equipment fitting", "Evening kayaking"],
-      highlight: "Sunset kayaking with local wildlife spotting"
+      title: "Easy Start For Your Out-of-Shape Body",
+      activities: ["Morning yoga (don't pull anything)", "Learn hiking basics (it's walking, but you'll still need help)", "Baby's first trail hike", "Equipment fitting (no, those shoes aren't appropriate)", "Sunset kayaking for the perfect selfie"],
+      highlight: "Wildlife spotting way better than your sad urban pigeons"
     },
     {
       day: 3,
-      title: "Cultural Immersion",
-      activities: ["Martial arts introduction", "Traditional lunch", "Historical site visit", "Percussion workshop", "Evening cultural show"],
-      highlight: "Private performance of ancient warrior rituals"
+      title: "Culture To Make You Less Boring",
+      activities: ["Martial arts (try not to hit yourself)", "Real food, not your usual takeout", "Historical sites older than your PlayStation", "Music lessons beyond your Spotify playlist", "Evening shows you can't stream online"],
+      highlight: "Ancient warrior rituals that make your gym routine look pathetic"
     },
     {
       day: 4,
-      title: "Challenge Day",
-      activities: ["Rock climbing expedition", "Rappelling session", "River crossing techniques", "Adventure photography", "Recovery massage"],
-      highlight: "Conquering the 100-foot natural rock face"
+      title: "Challenge Day (Don't Chicken Out)",
+      activities: ["Rock climbing that'll test your weak arms", "Rappelling down cliffs (no backing out)", "River crossing without your inflatable unicorn", "Photos that'll make your social media relevant", "Recovery massage for your inevitable soreness"],
+      highlight: "Conquering a 100-foot rock face (unless you wimp out)"
     },
     {
       day: 5,
-      title: "Water Adventures",
-      activities: ["White water rafting", "Cliff jumping (optional)", "Riverside lunch", "Swimming in natural pools", "Evening fishing"],
-      highlight: "Navigating Class III rapids with expert guides"
+      title: "Water Adventures (Try Not To Drown)",
+      activities: ["White water rafting (life vests are mandatory)", "Cliff jumping for the brave (optional for chickens)", "Lunch not from a delivery app", "Swimming in water without chlorine", "Evening fishing (actually catching fish, not excuses)"],
+      highlight: "Rapids that'll give you stories to tell forever (if you survive)"
     }
   ];
 
   return (
-    <main className="bg-gray-50">
+    <main className="bg-gray-50 text-black">
       <Header />
       
       {/* Hero Section with Parallax */}
@@ -155,14 +152,14 @@ export default function MaleExperience() {
         <div className="absolute inset-0 bg-black bg-opacity-50 z-0"></div>
         <div className="container mx-auto px-4 z-10 relative">
           <div className="max-w-2xl">
-            <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-4 animate-fade-in-down">Challenge Your Limits</h1>
-            <p className="text-lg sm:text-xl md:text-2xl text-white mt-4 mb-8 animate-fade-in-up">Adventure, culture, and experiences crafted for the modern explorer</p>
+            <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-4 animate-fade-in-down">Be Less Boring For Once</h1>
+            <p className="text-lg sm:text-xl md:text-2xl text-white mt-4 mb-8 animate-fade-in-up">Finally do something worth talking about besides your "cool" Reddit posts</p>
             <div className="flex flex-col sm:flex-row flex-wrap gap-4 animate-fade-in">
               <button 
                 onClick={() => document.getElementById('experiences').scrollIntoView({ behavior: 'smooth' })}
                 className="bg-blue-600 text-white px-6 sm:px-8 py-3 rounded-full hover:bg-blue-700 transition transform hover:scale-105 flex items-center justify-center"
               >
-                <span>Explore Experiences</span>
+                <span>See What You're Missing</span>
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                 </svg>
@@ -171,7 +168,7 @@ export default function MaleExperience() {
                 onClick={() => document.getElementById('workshops').scrollIntoView({ behavior: 'smooth' })}
                 className="border-2 border-white text-white px-6 sm:px-8 py-3 rounded-full hover:bg-white/10 transition flex items-center justify-center"
               >
-                <span>View Workshops</span>
+                <span>Skills You Actually Need</span>
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z" />
                 </svg>
@@ -194,19 +191,19 @@ export default function MaleExperience() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-8 text-center">
             <div className="px-2 sm:px-4 py-2">
               <div className="text-3xl sm:text-4xl font-bold text-blue-600 mb-1 sm:mb-2">20+</div>
-              <div className="text-sm sm:text-base text-gray-700 font-medium">Adventure Activities</div>
+              <div className="text-sm sm:text-base text-gray-700 font-medium">Activities Your Friends Can't Handle</div>
             </div>
             <div className="px-2 sm:px-4 py-2">
               <div className="text-3xl sm:text-4xl font-bold text-blue-600 mb-1 sm:mb-2">15+</div>
-              <div className="text-sm sm:text-base text-gray-700 font-medium">Expert Guides</div>
+              <div className="text-sm sm:text-base text-gray-700 font-medium">Guides To Save Your Sorry Butt</div>
             </div>
             <div className="px-2 sm:px-4 py-2">
               <div className="text-3xl sm:text-4xl font-bold text-blue-600 mb-1 sm:mb-2">10</div>
-              <div className="text-sm sm:text-base text-gray-700 font-medium">Years Experience</div>
+              <div className="text-sm sm:text-base text-gray-700 font-medium">Years Of Experience (Unlike You)</div>
             </div>
             <div className="px-2 sm:px-4 py-2">
               <div className="text-3xl sm:text-4xl font-bold text-blue-600 mb-1 sm:mb-2">2,500+</div>
-              <div className="text-sm sm:text-base text-gray-700 font-medium">Happy Adventurers</div>
+              <div className="text-sm sm:text-base text-gray-700 font-medium">People Braver Than You've Been</div>
             </div>
           </div>
         </div>
@@ -215,8 +212,8 @@ export default function MaleExperience() {
       {/* Experience Highlights with Tabs */}
       <section id="experiences" className="py-12 sm:py-20">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl sm:text-4xl font-bold text-center mb-3 sm:mb-4">Experiences For The Bold</h2>
-          <p className="text-gray-600 text-center max-w-2xl mx-auto mb-8 sm:mb-12 text-sm sm:text-base px-2">Challenge yourself or immerse in culture with our carefully crafted Kerala experiences</p>
+          <h2 className="text-3xl sm:text-4xl font-bold text-center mb-3 sm:mb-4">Experiences Your Boring Life Needs</h2>
+          <p className="text-gray-600 text-center max-w-2xl mx-auto mb-8 sm:mb-12 text-sm sm:text-base px-2">Actually have stories to tell besides that one time you went to a music festival</p>
           
           {/* Tab Navigation - Mobile Scroll, Desktop Regular */}
           <div className="flex justify-start sm:justify-center mb-8 sm:mb-12 border-b border-gray-200 overflow-x-auto pb-2 -mx-4 px-4 sm:mx-0 sm:px-0 scrollbar-hide">
@@ -224,19 +221,19 @@ export default function MaleExperience() {
               onClick={() => setActiveTab('highlights')} 
               className={`px-4 sm:px-6 py-2 sm:py-3 font-medium text-base sm:text-lg mx-2 border-b-2 whitespace-nowrap transition ${activeTab === 'highlights' ? 'border-blue-600 text-blue-600' : 'border-transparent text-gray-500 hover:text-gray-700'}`}
             >
-              Experience Highlights
+              Why You're Boring
             </button>
             <button 
               onClick={() => setActiveTab('packages')} 
               className={`px-4 sm:px-6 py-2 sm:py-3 font-medium text-base sm:text-lg mx-2 border-b-2 whitespace-nowrap transition ${activeTab === 'packages' ? 'border-blue-600 text-blue-600' : 'border-transparent text-gray-500 hover:text-gray-700'}`}
             >
-              Travel Packages
+              How To Fix Your Life
             </button>
             <button 
               onClick={() => setActiveTab('stories')} 
               className={`px-4 sm:px-6 py-2 sm:py-3 font-medium text-base sm:text-lg mx-2 border-b-2 whitespace-nowrap transition ${activeTab === 'stories' ? 'border-blue-600 text-blue-600' : 'border-transparent text-gray-500 hover:text-gray-700'}`}
             >
-              Explorer Stories
+              People Better Than You
             </button>
           </div>
           
@@ -351,8 +348,6 @@ export default function MaleExperience() {
                         <h4 className="font-bold text-sm sm:text-base">{pkg.title}</h4>
                         <div className="flex items-center mt-2 text-xs sm:text-sm">
                           <span className="text-gray-600">{pkg.duration}</span>
-                          <span className="mx-2">•</span>
-                          <span className="font-medium text-blue-600">${pkg.price}</span>
                         </div>
                       </button>
                     ))}
@@ -391,14 +386,7 @@ export default function MaleExperience() {
                         <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
                           <div>
                             <span className="text-gray-600 text-sm sm:text-base">{packages[currentPackage].duration}</span>
-                            <p className="text-lg sm:text-xl font-bold text-blue-600">${packages[currentPackage].price}</p>
                           </div>
-                          <button className="w-full sm:w-auto bg-blue-600 text-white px-4 sm:px-6 py-2 sm:py-3 rounded-full hover:bg-blue-700 transition transform hover:scale-105 duration-300 flex items-center justify-center sm:justify-start text-sm sm:text-base shadow-lg">
-                            <span>Book This Package</span>
-                            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                            </svg>
-                          </button>
                         </div>
                       </div>
                     </div>
@@ -423,7 +411,7 @@ export default function MaleExperience() {
                             <img src="/images/testimonials/john.jpg" alt="John T." className="w-full h-full object-cover" />
                           </div>
                           <div>
-                            <h3 className="font-bold text-lg sm:text-xl">John's Adventure</h3>
+                            <h3 className="font-bold text-lg sm:text-xl">Star_King's Adventure</h3>
                             <p className="text-gray-600 text-xs sm:text-sm">Traveled March 2024</p>
                           </div>
                         </div>
@@ -463,7 +451,7 @@ export default function MaleExperience() {
                           </div>
                         </div>
                         <p className="italic text-gray-600 mb-3 sm:mb-4 text-sm sm:text-base">"My friends and I wanted something challenging for our annual trip, and the Adventure package delivered. The rock climbing was a particular highlight - none of us had tried it before, but the instructors made us feel safe while still pushing our limits."</p>
-                        <p className="mb-3 sm:mb-4 text-sm sm:text-base">Raj and his four friends completed both the Adventure and Cultural packages, combining physical challenges with cultural experiences.</p>
+                        <p className="mb-3 sm:mb-4 text-sm sm:text-base">Star_King_2 and his four friends completed both the Adventure and Cultural packages, combining physical challenges with cultural experiences.</p>
                         <div className="flex mb-3">
                           {[1, 2, 3, 4, 5].map(star => (
                             <svg key={star} xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 sm:h-5 sm:w-5 text-yellow-400" viewBox="0 0 20 20" fill="currentColor">
@@ -503,8 +491,8 @@ export default function MaleExperience() {
               <img className="h-10 w-10 sm:h-12 sm:w-12 rounded-full" src="/images/testimonials/mark.jpg" alt="Mark C." />
             </div>
             <div>
-              <p className="text-gray-600 italic text-sm sm:text-base">"The Kalaripayattu training was incredible. I never expected to learn so much in just a few days!"</p>
-              <p className="font-bold mt-2 text-sm sm:text-base">Mark C.</p>
+              <p className="text-gray-600 italic text-sm sm:text-base">"Dude, I was just like you - a boring guy with nothing to talk about. Now I can actually fight! You're still lame though."</p>
+              <p className="font-bold mt-2 text-sm sm:text-base">Star_King_3 (Who's now cooler than you)</p>
               <div className="flex text-blue-500 mt-1">
                 {[1, 2, 3, 4, 5].map((star) => (
                   <svg key={star} xmlns="http://www.w3.org/2000/svg" className="h-3 w-3 sm:h-4 sm:w-4" viewBox="0 0 20 20" fill="currentColor">
@@ -520,8 +508,8 @@ export default function MaleExperience() {
       {/* Workshops Section */}
       <section id="workshops" className="py-12 sm:py-20 bg-blue-50">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl sm:text-4xl font-bold text-center mb-3 sm:mb-4">Skill-Building Workshops</h2>
-          <p className="text-gray-600 text-center max-w-2xl mx-auto mb-8 sm:mb-16 px-2 text-sm sm:text-base">Master new skills with our expert-led immersive experiences</p>
+          <h2 className="text-3xl sm:text-4xl font-bold text-center mb-3 sm:mb-4">Skills To Make You Less Useless</h2>
+          <p className="text-gray-600 text-center max-w-2xl mx-auto mb-8 sm:mb-16 px-2 text-sm sm:text-base">Finally learn something that impresses people other than your video game achievements</p>
           
           <div className="grid grid-cols-1 gap-6 sm:gap-8">
             {workshops.map((workshop, index) => (
@@ -539,9 +527,8 @@ export default function MaleExperience() {
                     <p className="text-gray-600 mb-3 sm:mb-4 text-sm sm:text-base">{workshop.description}</p>
                   </div>
                   <div className="mt-3 sm:mt-4 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-3 sm:gap-0">
-                    <span className="text-blue-600 font-bold text-sm sm:text-base">$35 per person</span>
                     <button className="w-full sm:w-auto bg-blue-100 text-blue-600 hover:bg-blue-200 transition px-4 py-2 rounded-full font-medium text-sm sm:text-base">
-                      Book Workshop
+                      Stop Being Useless
                     </button>
                   </div>
                 </div>
@@ -552,113 +539,80 @@ export default function MaleExperience() {
       </section>
       
       {/* Itinerary Section with Timeline */}
-<section id="itinerary" className="py-12 sm:py-20 bg-white">
-  <div className="container mx-auto px-4">
-    <h2 className="text-3xl sm:text-4xl font-bold text-center mb-3 sm:mb-4 animate-fade-in">Your Kerala Adventure</h2>
-    <p className="text-gray-600 text-center max-w-2xl mx-auto mb-8 sm:mb-16 px-2 text-sm sm:text-base">Day by day breakdown of your adventure and cultural experience</p>
-    
-    <div className="relative">
-      {/* Timeline line with animation - improved positioning for mobile */}
-      <div className="absolute left-4 sm:left-6 md:left-1/2 transform md:-translate-x-1/2 h-full w-1 bg-gradient-to-b from-blue-400 via-blue-500 to-blue-300 z-0 animate-pulse"></div>
-      
-      {/* Timeline items */}
-      {itinerary.map((day, index) => (
-        <div 
-          key={day.day} 
-          className="relative z-10 mb-8 sm:mb-12 opacity-0 animate-fade-in-up"
-          style={{ animationDelay: `${index * 0.2}s`, animationFillMode: 'forwards' }}
-        >
-          {/* Mobile-optimized layout structure */}
-          <div className={`flex flex-col md:flex-row items-start md:items-center ${index % 2 === 0 ? '' : 'md:flex-row-reverse'}`}>
-            {/* Timeline dot with pulse animation - improved positioning */}
-            <div className="absolute left-4 sm:left-6 md:left-1/2 transform md:-translate-x-1/2 group">
-              <div className="w-6 h-6 sm:w-8 sm:h-8 rounded-full bg-blue-500 border-4 border-white shadow-lg flex items-center justify-center 
-                transition-all duration-300 hover:scale-110 hover:bg-blue-600 z-20">
-                <span className="text-white font-bold text-xs sm:text-sm">{day.day}</span>
-              </div>
-              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-12 h-12 bg-blue-400 rounded-full opacity-30 
-                group-hover:animate-ping" style={{ animationDuration: '1.5s' }}></div>
-            </div>
+      <section id="itinerary" className="py-12 sm:py-20 bg-white">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl sm:text-4xl font-bold text-center mb-3 sm:mb-4 animate-fade-in">How We'll Make You Interesting</h2>
+          <p className="text-gray-600 text-center max-w-2xl mx-auto mb-8 sm:mb-16 px-2 text-sm sm:text-base">Day by day transformation from boring homebody to someone with actual stories</p>
+          
+          <div className="relative">
+            {/* Timeline line */}
+            <div className="absolute left-4 sm:left-6 md:left-1/2 transform md:-translate-x-1/2 h-full w-1 bg-gradient-to-b from-blue-400 via-blue-500 to-blue-300 z-0"></div>
             
-            {/* Content with improved spacing for mobile */}
-            <div className={`w-full md:w-5/12 pl-16 sm:pl-20 md:pl-0 ${index % 2 === 0 ? 'md:pr-12' : 'md:pl-12'}`}>
-              <div className="bg-white p-4 sm:p-6 rounded-xl shadow-lg transition-all duration-300 
-                hover:shadow-2xl hover:-translate-y-1 border-t-4 border-blue-500 group">
-                <h3 className="text-lg sm:text-xl font-bold mb-2 sm:mb-3 flex items-center">
-                  <span className="bg-blue-500 text-white rounded-full w-7 h-7 inline-flex items-center justify-center mr-2 
-                    group-hover:bg-blue-600 transition-colors">
-                    {day.day}
-                  </span>
-                  <span className="transition-colors group-hover:text-blue-600">{day.title}</span>
-                </h3>
-                
-                <ul className="mb-3 sm:mb-4 text-sm sm:text-base space-y-1 sm:space-y-2">
-                  {day.activities.map((activity, i) => (
-                    <li key={i} className="flex items-start group/item">
-                      <svg xmlns="http://www.w3.org/2000/svg" 
-                        className="h-5 w-5 text-blue-500 mr-2 mt-0.5 flex-shrink-0 transition-transform duration-300 group-hover/item:scale-125 group-hover/item:text-blue-600" 
-                        viewBox="0 0 20 20" fill="currentColor">
-                        <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                      </svg>
-                      <span className="transition-colors duration-300 group-hover/item:text-blue-800">{activity}</span>
-                    </li>
-                  ))}
-                </ul>
-                
-                <div className="bg-blue-50 p-2 sm:p-3 rounded-lg border-l-4 border-blue-500 text-sm sm:text-base transition-all 
-                  duration-300 group-hover:bg-blue-100 group-hover:border-blue-600">
-                  <span className="font-medium flex items-center">
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-1 text-blue-600" viewBox="0 0 20 20" fill="currentColor">
-                      <path fillRule="evenodd" d="M5 2a1 1 0 011 1v1h1a1 1 0 010 2H6v1a1 1 0 01-2 0V6H3a1 1 0 010-2h1V3a1 1 0 011-1zm0 10a1 1 0 011 1v1h1a1 1 0 110 2H6v1a1 1 0 11-2 0v-1H3a1 1 0 110-2h1v-1a1 1 0 011-1zM12 2a1 1 0 01.967.744L14.146 7.2 17.5 9.134a1 1 0 010 1.732l-3.354 1.935-1.18 4.455a1 1 0 01-1.933 0L9.854 12.8 6.5 10.866a1 1 0 010-1.732l3.354-1.935 1.18-4.455A1 1 0 0112 2z" clipRule="evenodd" />
-                    </svg>
-                    Highlight:
-                  </span> 
-                  <p className="mt-1 italic">{day.highlight}</p>
-                </div>
-                
-                <div className="mt-3 pt-3 border-t border-gray-100 flex justify-end opacity-0 group-hover:opacity-100 transition-all duration-300">
-                  <button className="text-blue-600 text-sm font-medium flex items-center hover:text-blue-800 transition">
-                    See details 
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-1 group-hover:translate-x-1 transition-transform" viewBox="0 0 20 20" fill="currentColor">
-                      <path fillRule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
-                    </svg>
-                  </button>
+            {/* Timeline items */}
+            {itinerary.map((day, index) => (
+              <div 
+                key={day.day} 
+                className="relative z-10 mb-8 sm:mb-12"
+              >
+                <div className={`flex flex-col md:flex-row items-start md:items-center ${index % 2 === 0 ? '' : 'md:flex-row-reverse'}`}>
+                  {/* Timeline dot */}
+                  <div className="absolute left-4 sm:left-6 md:left-1/2 transform md:-translate-x-1/2">
+                    <div className="w-6 h-6 sm:w-8 sm:h-8 rounded-full bg-blue-500 border-4 border-white shadow-lg flex items-center justify-center">
+                      <span className="text-white font-bold text-xs sm:text-sm">{day.day}</span>
+                    </div>
+                  </div>
+                  
+                  {/* Content */}
+                  <div className={`w-full md:w-5/12 pl-16 sm:pl-20 md:pl-0 ${index % 2 === 0 ? 'md:pr-12' : 'md:pl-12'}`}>
+                    <div className="bg-white p-4 sm:p-6 rounded-xl shadow-lg border-t-4 border-blue-500">
+                      <h3 className="text-lg sm:text-xl font-bold mb-2 sm:mb-3">{day.title}</h3>
+                      
+                      <ul className="mb-3 sm:mb-4 text-sm sm:text-base space-y-1 sm:space-y-2">
+                        {day.activities.map((activity, i) => (
+                          <li key={i} className="flex items-start">
+                            <svg xmlns="http://www.w3.org/2000/svg" 
+                              className="h-5 w-5 text-blue-500 mr-2 mt-0.5 flex-shrink-0" 
+                              viewBox="0 0 20 20" fill="currentColor">
+                              <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                            </svg>
+                            <span>{activity}</span>
+                          </li>
+                        ))}
+                      </ul>
+                      
+                      <div className="bg-blue-50 p-2 sm:p-3 rounded-lg border-l-4 border-blue-500 text-sm sm:text-base">
+                        <span className="font-medium">Highlight:</span> 
+                        <p className="mt-1 italic">{day.highlight}</p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
-            </div>
+            ))}
+          </div>
+          
+          {/* View Full Itinerary Button */}
+          <div className="text-center mt-8 sm:mt-10">
+            <button className="bg-white text-blue-600 border-2 border-blue-600 px-6 sm:px-8 py-2 sm:py-3 rounded-full">
+              View Full Detailed Itinerary
+            </button>
           </div>
         </div>
-      ))}
-    </div>
-    
-    {/* View Full Itinerary Button with animation */}
-    <div className="text-center mt-8 sm:mt-10">
-      <button className="bg-white text-blue-600 border-2 border-blue-600 px-6 sm:px-8 py-2 sm:py-3 rounded-full group overflow-hidden relative">
-        <span className="relative z-10 group-hover:text-white transition-colors duration-300 text-sm sm:text-base flex items-center mx-auto justify-center">
-          View Full Detailed Itinerary
-          <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-1 group-hover:translate-x-1 transition-transform duration-300" viewBox="0 0 20 20" fill="currentColor">
-            <path fillRule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
-          </svg>
-        </span>
-        <span className="absolute inset-0 bg-blue-600 translate-y-full group-hover:translate-y-0 transition-transform duration-300"></span>
-      </button>
-    </div>
-  </div>
-</section>
+      </section>
       
       {/* Call to Action with Parallax */}
       <section className="relative py-12 sm:py-20 bg-fixed bg-cover bg-center" style={{ backgroundImage: 'url(/images/male-experience/cta-bg.jpg)' }}>
         <div className="absolute inset-0 bg-gradient-to-r from-blue-900/80 to-indigo-900/80"></div>
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-xl mx-auto text-center text-white">
-            <h2 className="text-3xl sm:text-4xl font-bold mb-3 sm:mb-4">Ready for Your Kerala Adventure?</h2>
-            <p className="text-base sm:text-lg mb-6 sm:mb-8 px-2">Join like-minded adventurers for an unforgettable journey through Kerala.</p>
+            <h2 className="text-3xl sm:text-4xl font-bold mb-3 sm:mb-4">Ready To Stop Being The Boring Friend?</h2>
+            <p className="text-base sm:text-lg mb-6 sm:mb-8 px-2">Your friends are already signing up. Don't be the only one left out AGAIN.</p>
             <div className="flex flex-col sm:flex-row flex-wrap justify-center gap-4">
               <button className="bg-white text-blue-600 px-6 sm:px-8 py-2 sm:py-3 rounded-full font-bold hover:bg-gray-100 transition transform hover:scale-105 shadow-lg w-full sm:w-auto">
-                Book Your Adventure
+                Fine, I'll Join
               </button>
               <button className="bg-transparent border-2 border-white text-white px-6 sm:px-8 py-2 sm:py-3 rounded-full hover:bg-white/10 transition w-full sm:w-auto">
-                Request Custom Itinerary
+                I Need More Convincing (I'm Slow)
               </button>
             </div>
           </div>

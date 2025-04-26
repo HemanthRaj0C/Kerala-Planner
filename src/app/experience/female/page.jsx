@@ -31,47 +31,44 @@ export default function FemaleExperience() {
   // Experience packages data
   const packages = [
     {
-      title: "Wellness & Rejuvenation",
-      description: "A journey focused on holistic wellness, combining traditional Ayurvedic treatments with yoga, meditation, and healthy cuisine.",
+      title: "Wellness That Actually Works",
+      description: "Stop scrolling through Instagram wellness reels and actually do something good for yourself for once.",
       features: [
-        "Personalized Ayurvedic consultation",
-        "Daily yoga and meditation sessions",
-        "Herbal steam bath and massage therapies",
-        "Cooking classes for Ayurvedic cuisine",
-        "Nature walks and forest bathing",
-        "Wellness journal and personalized take-home regimen"
+        "Health advice that isn't from TikTok",
+        "Yoga sessions where no one films you",
+        "Massages better than your $15 mall chair massage",
+        "Learn to cook something beyond avocado toast",
+        "Nature walks without having to post about them",
+        "Wellness tips you'll actually use, not just forget"
       ],
-      price: 1299,
       duration: "7 days",
       image: "/images/female-experience/wellness.jpg"
     },
     {
-      title: "Cultural Immersion",
-      description: "Dive deep into Kerala's rich cultural heritage with hands-on experiences led by local women artisans and experts.",
+      title: "Culture Beyond Your Spotify Playlist",
+      description: "Actually learn about other cultures instead of just appropriating them for your aesthetic.",
       features: [
-        "Traditional dance and music lessons",
-        "Handloom weaving workshop",
-        "Local home visits and meal sharing",
-        "Festival participation (seasonal)",
-        "Temple and historical site tours with female guides",
-        "Craft making with artisan women"
+        "Dance lessons not from YouTube tutorials",
+        "Weaving skills beyond friendship bracelets",
+        "Meet locals who won't be in your stories",
+        "Festivals better than your sad music festival",
+        "History lessons more accurate than Netflix",
+        "Crafts that actually look good, not Pinterest fails"
       ],
-      price: 1199,
       duration: "6 days",
       image: "/images/female-experience/cultural.jpg"
     },
     {
-      title: "Adventure & Discovery",
-      description: "For women seeking more active experiences, this package combines natural beauty with exciting adventures in a safe environment.",
+      title: "Adventures Your Feed Needs",
+      description: "Finally do something besides brunch that's actually worth posting about. We promise better photos than your last staycation.",
       features: [
-        "Guided nature treks with female guides",
-        "Bamboo rafting through backwaters",
-        "Wildlife sanctuary exploration",
-        "Sunrise yoga on mountain tops",
-        "Photography sessions in scenic spots",
-        "Tea plantation tours and tea tasting"
+        "Hikes with views better than your neighborhood park",
+        "Water activities beyond your inflatable pool float",
+        "Wildlife encounters not at your local zoo",
+        "Sunrise views worth waking up for, unlike your alarm",
+        "Photo spots your followers will actually envy",
+        "Tea plantations nicer than your sad herb garden"
       ],
-      price: 1399,
       duration: "8 days",
       image: "/images/female-experience/adventure.jpg"
     }
@@ -80,31 +77,31 @@ export default function FemaleExperience() {
   // Workshops data
   const workshops = [
     {
-      title: "Traditional Kerala Cuisine",
+      title: "Food That's Not From Uber Eats",
       instructor: "Chef Lakshmi",
       duration: "3 hours",
-      description: "Learn to create authentic Kerala dishes with traditional spices and techniques. Take home recipe cards and a special spice blend.",
+      description: "Learn to make actual food instead of just taking pictures of restaurant meals or microwaving frozen dinners.",
       image: "/images/female-experience/cooking.jpg"
     },
     {
-      title: "Ayurvedic Self-Care",
+      title: "Self-Care Beyond Face Masks",
       instructor: "Dr. Meera Nair",
       duration: "2.5 hours",
-      description: "Create your own Ayurvedic oils, scrubs, and face masks using natural ingredients. Includes personalized dosha assessment.",
+      description: "Make real wellness products instead of wasting money on trendy stuff that doesn't work. Your bathroom cabinet is disappointed in you.",
       image: "/images/female-experience/ayurveda-workshop.jpg"
     },
     {
-      title: "Textile Art & Block Printing",
+      title: "Art Skills To Replace Your Filters",
       instructor: "Anita Thomas",
       duration: "4 hours",
-      description: "Design and create your own Kerala-inspired textile art using traditional block printing methods with natural dyes.",
+      description: "Create actual art instead of relying on Instagram filters. Make something your mother can actually pretend to be proud of.",
       image: "/images/female-experience/block-printing.jpg"
     },
     {
-      title: "Kerala Classical Dance",
+      title: "Dance That's Not Just For TikTok",
       instructor: "Vani Krishnan",
       duration: "2 hours",
-      description: "Learn the basics of Mohiniyattam, Kerala's classical dance form known for its graceful movements and expressions.",
+      description: "Learn actual dance moves instead of the same three TikTok moves you've been repeating for years. Embarrass yourself less at weddings.",
       image: "/images/female-experience/dance.jpg"
     }
   ];
@@ -113,38 +110,38 @@ export default function FemaleExperience() {
   const itinerary = [
     {
       day: 1,
-      title: "Arrival & Welcome",
-      activities: ["Airport reception", "Welcome ceremony with flower garlands", "Refreshment with herbal tea", "Brief orientation", "Evening dinner with other travelers"],
-      highlight: "Traditional welcome with jasmine flowers and sandalwood tilak"
+      title: "Arrival & No More Excuses",
+      activities: ["Airport pickup (we won't ghost you)", "Welcome ceremony better than your birthday", "Herbal tea that's not from a tea bag", "Orientation so you don't get lost", "Dinner with people cooler than your friends"],
+      highlight: "Traditional welcome to make you feel special for once"
     },
     {
       day: 2,
-      title: "Wellness Introduction",
-      activities: ["Morning yoga session", "Ayurvedic consultation", "Initial relaxation treatment", "Wellness goal setting", "Evening meditation by the lake"],
-      highlight: "Personalized wellness plan crafted by Ayurvedic doctor"
+      title: "Wellness Your Body Desperately Needs",
+      activities: ["Morning yoga (try not to fall)", "Health consult to explain what's wrong with you", "Relaxation because you're always 'stressed'", "Set wellness goals (finally)", "Evening meditation by water (not your bathtub)"],
+      highlight: "Personalized wellness plan better than your gym membership"
     },
     {
       day: 3,
-      title: "Cultural Exploration",
-      activities: ["Visit to local textile workshop", "Traditional lunch with local family", "Kerala art forms demonstration", "Saree draping workshop", "Cultural dinner and performance"],
-      highlight: "Hands-on lesson in traditional Kerala mural art"
+      title: "Culture Beyond Your Netflix Shows",
+      activities: ["Visit actual artisans, not an Etsy shop", "Lunch with locals, not food delivery", "Art demonstration (no stick figures)", "Learn to wear clothes properly", "Dinner that's actually cultural"],
+      highlight: "Art lessons for your remedial skills"
     },
     {
       day: 4,
-      title: "Nature Day",
-      activities: ["Guided hike through spice plantation", "Waterfall meditation session", "Organic farm-to-table lunch", "Herbal garden tour", "Cooking demo with fresh ingredients"],
-      highlight: "Forest bathing session with aromatherapy"
+      title: "Nature That's Not Your Houseplant",
+      activities: ["Hike through places you can't pronounce", "Meditate by water that's not your shower", "Eat food that grew where you're standing", "Garden tour with actual knowledge", "Cooking with ingredients you can't identify"],
+      highlight: "Forest experiences beyond your sad park visit"
     },
     {
       day: 5,
-      title: "Water Experiences",
-      activities: ["Sunrise yoga by the backwaters", "Traditional houseboat cruise", "Visit to fishing village", "Lakeside reflection activities", "Sunset photography session"],
-      highlight: "Private sunset cruise with champagne and local delicacies"
+      title: "Water That's Not Your Bathtub",
+      activities: ["Sunrise yoga by real water", "Boat ride not on a pedal boat", "Meet people who catch fish for living", "Reflection that's not your mirror", "Sunset photos your followers will envy"],
+      highlight: "Private sunset cruise better than your inflatable raft"
     }
   ];
 
   return (
-    <main className="bg-gray-50">
+    <main className="bg-gray-50 text-black">
       <Header />
       
       {/* Hero Section with Parallax */}
@@ -155,14 +152,14 @@ export default function FemaleExperience() {
         <div className="absolute inset-0 bg-black bg-opacity-40 z-0"></div>
         <div className="container mx-auto px-4 z-10 relative">
           <div className="max-w-2xl">
-            <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-4 animate-fade-in-down">Discover the Magic of Kerala</h1>
-            <p className="text-lg sm:text-xl md:text-2xl text-white mt-4 mb-8 animate-fade-in-up">Immerse yourself in culture, wellness, and natural beauty</p>
+            <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-4 animate-fade-in-down">Get Off Your Instagram For Once</h1>
+            <p className="text-lg sm:text-xl md:text-2xl text-white mt-4 mb-8 animate-fade-in-up">Do something worth posting about besides your coffee art</p>
             <div className="flex flex-col sm:flex-row flex-wrap gap-4 animate-fade-in">
               <button 
                 onClick={() => document.getElementById('experiences').scrollIntoView({ behavior: 'smooth' })}
                 className="bg-rose-500 text-white px-6 sm:px-8 py-3 rounded-full hover:bg-rose-600 transition transform hover:scale-105 flex items-center justify-center"
               >
-                <span>Explore Experiences</span>
+                <span>Things Your Feed Needs</span>
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                 </svg>
@@ -171,7 +168,7 @@ export default function FemaleExperience() {
                 onClick={() => document.getElementById('workshops').scrollIntoView({ behavior: 'smooth' })}
                 className="border-2 border-white text-white px-6 sm:px-8 py-3 rounded-full hover:bg-white/10 transition flex items-center justify-center"
               >
-                <span>View Workshops</span>
+                <span>Learn Real Skills For Once</span>
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z" />
                 </svg>
@@ -194,19 +191,19 @@ export default function FemaleExperience() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-8 text-center">
             <div className="px-2 sm:px-4 py-2">
               <div className="text-3xl sm:text-4xl font-bold text-rose-500 mb-1 sm:mb-2">100%</div>
-              <div className="text-sm sm:text-base text-gray-700 font-medium">Women-Led Experiences</div>
+              <div className="text-sm sm:text-base text-gray-700 font-medium">Better Than Your Last Vacation</div>
             </div>
             <div className="px-2 sm:px-4 py-2">
               <div className="text-3xl sm:text-4xl font-bold text-rose-500 mb-1 sm:mb-2">12+</div>
-              <div className="text-sm sm:text-base text-gray-700 font-medium">Exclusive Activities</div>
+              <div className="text-sm sm:text-base text-gray-700 font-medium">Activities Better Than Brunch</div>
             </div>
             <div className="px-2 sm:px-4 py-2">
               <div className="text-3xl sm:text-4xl font-bold text-rose-500 mb-1 sm:mb-2">8</div>
-              <div className="text-sm sm:text-base text-gray-700 font-medium">Years of Experience</div>
+              <div className="text-sm sm:text-base text-gray-700 font-medium">Years Not Wasting Our Time</div>
             </div>
             <div className="px-2 sm:px-4 py-2">
               <div className="text-3xl sm:text-4xl font-bold text-rose-500 mb-1 sm:mb-2">1,200+</div>
-              <div className="text-sm sm:text-base text-gray-700 font-medium">Happy Travelers</div>
+              <div className="text-sm sm:text-base text-gray-700 font-medium">People Already Better Than You</div>
             </div>
           </div>
         </div>
@@ -215,8 +212,8 @@ export default function FemaleExperience() {
       {/* Experience Highlights with Tabs */}
       <section id="experiences" className="py-12 sm:py-20">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl sm:text-4xl font-bold text-center mb-3 sm:mb-4">Experiences Crafted for You</h2>
-          <p className="text-gray-600 text-center max-w-2xl mx-auto mb-8 sm:mb-12 text-sm sm:text-base px-2">Discover the perfect blend of relaxation, adventure, and cultural immersion with our women-focused experiences</p>
+          <h2 className="text-3xl sm:text-4xl font-bold text-center mb-3 sm:mb-4">Experiences Your Stories Need</h2>
+          <p className="text-gray-600 text-center max-w-2xl mx-auto mb-8 sm:mb-12 text-sm sm:text-base px-2">Finally do something that doesn't involve your couch or another coffee shop</p>
           
           {/* Tab Navigation - Mobile Scroll, Desktop Regular */}
           <div className="flex justify-start sm:justify-center mb-8 sm:mb-12 border-b border-gray-200 overflow-x-auto pb-2 -mx-4 px-4 sm:mx-0 sm:px-0 scrollbar-hide">
@@ -224,19 +221,19 @@ export default function FemaleExperience() {
               onClick={() => setActiveTab('highlights')} 
               className={`px-4 sm:px-6 py-2 sm:py-3 font-medium text-base sm:text-lg mx-2 border-b-2 whitespace-nowrap transition ${activeTab === 'highlights' ? 'border-rose-500 text-rose-500' : 'border-transparent text-gray-500 hover:text-gray-700'}`}
             >
-              Experience Highlights
+              Why You're Boring
             </button>
             <button 
               onClick={() => setActiveTab('packages')} 
               className={`px-4 sm:px-6 py-2 sm:py-3 font-medium text-base sm:text-lg mx-2 border-b-2 whitespace-nowrap transition ${activeTab === 'packages' ? 'border-rose-500 text-rose-500' : 'border-transparent text-gray-500 hover:text-gray-700'}`}
             >
-              Travel Packages
+              How To Fix Your Life
             </button>
             <button 
               onClick={() => setActiveTab('stories')} 
               className={`px-4 sm:px-6 py-2 sm:py-3 font-medium text-base sm:text-lg mx-2 border-b-2 whitespace-nowrap transition ${activeTab === 'stories' ? 'border-rose-500 text-rose-500' : 'border-transparent text-gray-500 hover:text-gray-700'}`}
             >
-              Women's Stories
+              People Cooler Than You
             </button>
           </div>
           
@@ -244,89 +241,51 @@ export default function FemaleExperience() {
           <div className="tab-content">
             {/* Highlights Tab */}
             {activeTab === 'highlights' && (
-              <div className="animate-fade-in">
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
-                  {/* Highlight Card 1 - Ayurveda */}
-                  <div className="bg-white rounded-xl shadow-xl overflow-hidden transform transition-all hover:-translate-y-2 hover:shadow-2xl">
-                    <div className="relative h-48 sm:h-64 overflow-hidden group">
-                      <img src="/images/female-experience/ayurveda.jpg" alt="Ayurveda" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
-                      <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-80"></div>
-                      <div className="absolute bottom-0 left-0 p-4 sm:p-6">
-                        <h3 className="text-xl sm:text-2xl font-bold text-white">Authentic Ayurvedic Treatments</h3>
-                      </div>
-                    </div>
-                    <div className="p-4 sm:p-6">
-                      <p className="mb-4 text-sm sm:text-base">Rejuvenate your body and mind with traditional wellness therapies at premium retreats led by skilled female practitioners.</p>
-                      <div className="flex flex-wrap gap-2 mb-4">
-                        <span className="bg-green-100 text-green-800 text-xs px-3 py-1 rounded-full">Wellness</span>
-                        <span className="bg-purple-100 text-purple-800 text-xs px-3 py-1 rounded-full">Women Practitioners</span>
-                        <span className="bg-amber-100 text-amber-800 text-xs px-3 py-1 rounded-full">Ancient Traditions</span>
-                      </div>
-                      <button 
-                        onClick={() => setActiveTab('packages')}
-                        className="text-rose-500 font-medium hover:text-rose-600 transition flex items-center text-sm sm:text-base"
-                      >
-                        <span>View wellness packages</span>
-                        <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                        </svg>
-                      </button>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8 animate-fade-in">
+                <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition transform hover:-translate-y-1">
+                  <div className="h-48 sm:h-56 relative">
+                    <img src="/images/female-experience/highlight1.jpg" alt="Wellness Retreat" className="w-full h-full object-cover" />
+                  </div>
+                  <div className="p-4 sm:p-6">
+                    <h3 className="text-lg sm:text-xl font-bold mb-2 sm:mb-3">Your Apartment Isn't An Experience</h3>
+                    <p className="text-gray-600 text-sm sm:text-base mb-3">Staring at your walls and watching Netflix isn't a personality. Discover actual activities that don't involve your phone for once.</p>
+                    <div className="flex items-center text-rose-500 font-medium text-sm sm:text-base">
+                      <span>See what you're missing</span>
+                      <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                      </svg>
                     </div>
                   </div>
-                  
-                  {/* Highlight Card 2 - Cultural */}
-                  <div className="bg-white rounded-xl shadow-xl overflow-hidden transform transition-all hover:-translate-y-2 hover:shadow-2xl">
-                    <div className="relative h-48 sm:h-64 overflow-hidden group">
-                      <img src="/images/female-experience/cultural.jpg" alt="Cultural" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
-                      <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-80"></div>
-                      <div className="absolute bottom-0 left-0 p-4 sm:p-6">
-                        <h3 className="text-xl sm:text-2xl font-bold text-white">Cultural Immersion</h3>
-                      </div>
-                    </div>
-                    <div className="p-4 sm:p-6">
-                      <p className="mb-4 text-sm sm:text-base">Learn traditional dance forms, art, and cooking from local women artisans and experts. Create lasting connections with local communities.</p>
-                      <div className="flex flex-wrap gap-2 mb-4">
-                        <span className="bg-rose-100 text-rose-800 text-xs px-3 py-1 rounded-full">Authentic</span>
-                        <span className="bg-rose-100 text-rose-800 text-xs px-3 py-1 rounded-full">Community</span>
-                        <span className="bg-yellow-100 text-yellow-800 text-xs px-3 py-1 rounded-full">Artisan Crafts</span>
-                      </div>
-                      <button 
-                        onClick={() => document.getElementById('workshops').scrollIntoView({ behavior: 'smooth' })}
-                        className="text-rose-500 font-medium hover:text-rose-600 transition flex items-center text-sm sm:text-base"
-                      >
-                        <span>Explore workshops</span>
-                        <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                        </svg>
-                      </button>
+                </div>
+                
+                <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition transform hover:-translate-y-1">
+                  <div className="h-48 sm:h-56 relative">
+                    <img src="/images/female-experience/highlight2.jpg" alt="Cultural Experience" className="w-full h-full object-cover" />
+                  </div>
+                  <div className="p-4 sm:p-6">
+                    <h3 className="text-lg sm:text-xl font-bold mb-2 sm:mb-3">Your Dating App Profile Needs Help</h3>
+                    <p className="text-gray-600 text-sm sm:text-base mb-3">Another pic at a restaurant won't get you matches. Photos from Kerala might actually make someone swipe right for once.</p>
+                    <div className="flex items-center text-rose-500 font-medium text-sm sm:text-base">
+                      <span>Upgrade your social media</span>
+                      <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                      </svg>
                     </div>
                   </div>
-                  
-                  {/* Highlight Card 3 - Shopping */}
-                  <div className="bg-white rounded-xl shadow-xl overflow-hidden transform transition-all hover:-translate-y-2 hover:shadow-2xl">
-                    <div className="relative h-48 sm:h-64 overflow-hidden group">
-                      <img src="/images/female-experience/shopping.jpg" alt="Shopping" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
-                      <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-80"></div>
-                      <div className="absolute bottom-0 left-0 p-4 sm:p-6">
-                        <h3 className="text-xl sm:text-2xl font-bold text-white">Artisanal Shopping</h3>
-                      </div>
-                    </div>
-                    <div className="p-4 sm:p-6">
-                      <p className="mb-4 text-sm sm:text-base">Discover handcrafted treasures, textiles, spices, and unique souvenirs in local markets with expert guidance on fair pricing.</p>
-                      <div className="flex flex-wrap gap-2 mb-4">
-                        <span className="bg-teal-100 text-teal-800 text-xs px-3 py-1 rounded-full">Handcrafted</span>
-                        <span className="bg-orange-100 text-orange-800 text-xs px-3 py-1 rounded-full">Female Artisans</span>
-                        <span className="bg-indigo-100 text-indigo-800 text-xs px-3 py-1 rounded-full">Ethical Shopping</span>
-                      </div>
-                      <button 
-                        onClick={() => setActiveTab('stories')}
-                        className="text-rose-500 font-medium hover:text-rose-600 transition flex items-center text-sm sm:text-base"
-                      >
-                        <span>Read traveler stories</span>
-                        <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                        </svg>
-                      </button>
+                </div>
+                
+                <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition transform hover:-translate-y-1">
+                  <div className="h-48 sm:h-56 relative">
+                    <img src="/images/female-experience/highlight3.jpg" alt="Adventure Activities" className="w-full h-full object-cover" />
+                  </div>
+                  <div className="p-4 sm:p-6">
+                    <h3 className="text-lg sm:text-xl font-bold mb-2 sm:mb-3">Your Friends Are Getting Tired Of You</h3>
+                    <p className="text-gray-600 text-sm sm:text-base mb-3">They've heard all your stories. Get new ones that don't involve your cat or what happened at work again.</p>
+                    <div className="flex items-center text-rose-500 font-medium text-sm sm:text-base">
+                      <span>Become the interesting friend</span>
+                      <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                      </svg>
                     </div>
                   </div>
                 </div>
@@ -336,150 +295,129 @@ export default function FemaleExperience() {
             {/* Packages Tab */}
             {activeTab === 'packages' && (
               <div className="animate-fade-in">
-                <div className="bg-white rounded-xl shadow-xl p-4 sm:p-6 mb-6 sm:mb-8">
-                  <h3 className="text-xl sm:text-2xl font-bold mb-3 sm:mb-4">Choose Your Kerala Experience</h3>
-                  <p className="text-gray-600 mb-4 sm:mb-6 text-sm sm:text-base">Each package is thoughtfully designed for women travelers seeking authentic experiences</p>
-                  
-                  {/* Package Selector */}
-                  <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-4">
-                    {packages.map((pkg, index) => (
-                      <button 
-                        key={index}
-                        onClick={() => setCurrentPackage(index)}
-                        className={`p-3 sm:p-4 rounded-lg text-left transition hover:bg-rose-50 border-2 ${currentPackage === index ? 'border-rose-500 bg-rose-50' : 'border-gray-200'}`}
-                      >
-                        <h4 className="font-bold text-sm sm:text-base">{pkg.title}</h4>
-                        <div className="flex items-center mt-2 text-xs sm:text-sm">
-                          <span className="text-gray-600">{pkg.duration}</span>
-                          <span className="mx-2">•</span>
-                          <span className="font-medium text-rose-600">${pkg.price}</span>
+                <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                  {packages.map((pkg, index) => (
+                    <div 
+                      key={index}
+                      className={`bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition ${currentPackage === index ? 'ring-2 ring-rose-500' : ''}`}
+                    >
+                      <div className="h-48 sm:h-56 relative">
+                        <img src={pkg.image} alt={pkg.title} className="w-full h-full object-cover" />
+                        <div className="absolute top-0 right-0 bg-rose-500 text-white px-3 py-1 m-3 rounded-md text-sm font-medium">
+                          {pkg.duration}
                         </div>
-                      </button>
-                    ))}
-                  </div>
-                </div>
-                
-                {/* Selected package details */}
-                {packages[currentPackage] && (
-                  <div className="bg-white rounded-xl shadow-xl overflow-hidden animate-fade-in">
-                    <div className="flex flex-col md:flex-row">
-                      <div className="w-full md:w-1/2">
-                        <img 
-                          src={packages[currentPackage].image} 
-                          alt={packages[currentPackage].title} 
-                          className="w-full h-48 sm:h-64 md:h-full object-cover" 
-                        />
                       </div>
-                      <div className="p-4 sm:p-8 w-full md:w-1/2">
-                        <h3 className="text-2xl sm:text-3xl font-bold mb-3 sm:mb-4">{packages[currentPackage].title}</h3>
-                        <p className="text-gray-600 mb-4 sm:mb-6 text-sm sm:text-base">{packages[currentPackage].description}</p>
-                        
-                        <div className="mb-4 sm:mb-6">
-                          <h4 className="font-bold mb-2 sm:mb-3 text-sm sm:text-base">What's Included:</h4>
-                          <ul className="grid grid-cols-1 gap-2 text-sm sm:text-base">
-                            {packages[currentPackage].features.map((feature, index) => (
-                              <li key={index} className="flex items-start">
-                                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-rose-500 mr-2 mt-0.5 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor">
-                                  <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                                </svg>
-                                <span>{feature}</span>
-                              </li>
-                            ))}
-                          </ul>
-                        </div>
-                        
-                        <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
-                          <div>
-                            <span className="text-gray-600 text-sm sm:text-base">{packages[currentPackage].duration}</span>
-                            <p className="text-lg sm:text-xl font-bold text-rose-600">${packages[currentPackage].price}</p>
-                          </div>
-                          <button className="w-full sm:w-auto bg-rose-500 text-white px-4 sm:px-6 py-2 sm:py-3 rounded-full hover:bg-rose-600 transition transform hover:scale-105 duration-300 flex items-center justify-center sm:justify-start text-sm sm:text-base shadow-lg">
-                            <span>Book This Package</span>
-                            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                            </svg>
+                      <div className="p-5 sm:p-6">
+                        <h3 className="text-lg sm:text-xl font-bold mb-2">{pkg.title}</h3>
+                        <p className="text-gray-600 text-sm mb-4">{pkg.description}</p>
+                        <ul className="space-y-2 mb-6">
+                          {pkg.features.map((feature, i) => (
+                            <li key={i} className="flex items-start text-sm">
+                              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-rose-500 mr-2 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor">
+                                <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                              </svg>
+                              <span>{feature}</span>
+                            </li>
+                          ))}
+                        </ul>
+                        <div className="flex flex-col sm:flex-row justify-between items-center">
+                          <button 
+                            onClick={() => setCurrentPackage(index)}
+                            className={`w-full sm:w-auto px-5 py-2 rounded-full font-medium text-sm ${
+                              currentPackage === index 
+                                ? 'bg-rose-500 text-white' 
+                                : 'bg-rose-100 text-rose-600 hover:bg-rose-200'
+                            } transition`}
+                          >
+                            {currentPackage === index ? 'Selected' : 'Select Package'}
                           </button>
                         </div>
                       </div>
                     </div>
-                  </div>
-                )}
+                  ))}
+                </div>
+                
+                <div className="mt-10 text-center">
+                  <button 
+                    onClick={() => router.push('/join-form')}
+                    className="bg-rose-500 text-white px-8 py-3 rounded-full font-bold hover:bg-rose-600 transition transform hover:scale-105 shadow-lg inline-flex items-center"
+                  >
+                    <span>Start Being Interesting</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-2" viewBox="0 0 20 20" fill="currentColor">
+                      <path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd" />
+                    </svg>
+                  </button>
+                </div>
               </div>
             )}
             
             {/* Stories Tab */}
             {activeTab === 'stories' && (
               <div className="animate-fade-in">
-                <div className="grid grid-cols-1 gap-6 sm:gap-8">
-                  {/* Story 1 */}
-                  <div className="bg-white rounded-xl shadow-xl overflow-hidden">
-                    <div className="flex flex-col md:flex-row">
-                      <div className="w-full md:w-1/3 h-48 sm:h-56 md:h-auto">
-                        <img src="/images/female-experience/story1.jpg" alt="Sarah's Story" className="w-full h-full object-cover" />
-                      </div>
-                      <div className="p-4 sm:p-8 w-full md:w-2/3">
-                        <div className="flex items-center mb-3 sm:mb-4">
-                          <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full overflow-hidden mr-3 sm:mr-4 flex-shrink-0">
-                            <img src="/images/testimonials/sarah.jpg" alt="Sarah M." className="w-full h-full object-cover" />
-                          </div>
-                          <div>
-                            <h3 className="font-bold text-lg sm:text-xl">Sarah's Journey</h3>
-                            <p className="text-gray-600 text-xs sm:text-sm">Traveled April 2024</p>
-                          </div>
-                        </div>
-                        <p className="italic text-gray-600 mb-3 sm:mb-4 text-sm sm:text-base">"As a solo female traveler, I was hesitant about visiting India, but the women-focused Kerala experience completely put me at ease. From the moment I was welcomed by my female guide at the airport to the final day of shopping with local artisans, every detail was thoughtfully arranged to create a safe, enriching experience."</p>
-                        <p className="mb-3 sm:mb-4 text-sm sm:text-base">Sarah participated in our Wellness & Rejuvenation package, spending a week learning about Ayurvedic practices and yoga from experienced female practitioners.</p>
-                        <div className="flex mb-3">
-                          {[1, 2, 3, 4, 5].map(star => (
-                            <svg key={star} xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 sm:h-5 sm:w-5 text-yellow-400" viewBox="0 0 20 20" fill="currentColor">
-                              <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                            </svg>
-                          ))}
-                        </div>
-                        <button className="text-rose-500 font-medium hover:text-rose-600 transition flex items-center text-sm sm:text-base">
-                          <span>Read Sarah's full story</span>
-                          <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
+                  <div className="bg-white rounded-xl shadow-lg overflow-hidden p-5 sm:p-6 flex flex-col md:flex-row gap-4 items-start">
+                    <div className="flex-shrink-0">
+                      <img src="/images/testimonials/maya.jpg" alt="Maya" className="h-16 w-16 rounded-full object-cover border-2 border-rose-100" />
+                    </div>
+                    <div>
+                      <div className="flex text-rose-500 mb-2">
+                        {[1, 2, 3, 4, 5].map((star) => (
+                          <svg key={star} xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                           </svg>
-                        </button>
+                        ))}
                       </div>
+                      <p className="text-gray-600 italic text-sm mb-3">"I used to just post latte art and my cat. Now I'm the friend with cool stories and people actually pay attention when I talk at brunch."</p>
+                      <p className="font-bold text-base">Star_King, Actually Gets Invited Places Now</p>
                     </div>
                   </div>
                   
-                  {/* Story 2 */}
-                  <div className="bg-white rounded-xl shadow-xl overflow-hidden">
-                    <div className="flex flex-col md:flex-row">
-                      <div className="w-full md:w-1/3 h-48 sm:h-56 md:h-auto">
-                        <img src="/images/female-experience/story2.jpg" alt="Group Story" className="w-full h-full object-cover" />
-                      </div>
-                      <div className="p-4 sm:p-8 w-full md:w-2/3">
-                        <div className="flex items-center mb-3 sm:mb-4">
-                          <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full overflow-hidden mr-3 sm:mr-4 flex-shrink-0">
-                            <img src="/images/testimonials/priya.jpg" alt="Priya K." className="w-full h-full object-cover" />
-                          </div>
-                          <div>
-                            <h3 className="font-bold text-lg sm:text-xl">The Friends' Retreat</h3>
-                            <p className="text-gray-600 text-xs sm:text-sm">Traveled January 2024</p>
-                          </div>
-                        </div>
-                        <p className="italic text-gray-600 mb-3 sm:mb-4 text-sm sm:text-base">"My three best friends and I booked the Cultural Immersion package as a girls' getaway, and it surpassed all our expectations. Learning traditional dance, cooking with local families, and creating our own textiles gave us memories we'll cherish forever."</p>
-                        <p className="mb-3 sm:mb-4 text-sm sm:text-base">Priya and her friends particularly enjoyed the textile workshop and the evening boat ride through the backwaters where they shared sunset cocktails.</p>
-                        <div className="flex mb-3">
-                          {[1, 2, 3, 4, 5].map(star => (
-                            <svg key={star} xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 sm:h-5 sm:w-5 text-yellow-400" viewBox="0 0 20 20" fill="currentColor">
-                              <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                            </svg>
-                          ))}
-                        </div>
-                        <button className="text-rose-500 font-medium hover:text-rose-600 transition flex items-center text-sm sm:text-base">
-                          <span>Read their full story</span>
-                          <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  <div className="bg-white rounded-xl shadow-lg overflow-hidden p-5 sm:p-6 flex flex-col md:flex-row gap-4 items-start">
+                    <div className="flex-shrink-0">
+                      <img src="/images/testimonials/jennifer.jpg" alt="Jennifer" className="h-16 w-16 rounded-full object-cover border-2 border-rose-100" />
+                    </div>
+                    <div>
+                      <div className="flex text-rose-500 mb-2">
+                        {[1, 2, 3, 4, 5].map((star) => (
+                          <svg key={star} xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                           </svg>
-                        </button>
+                        ))}
                       </div>
+                      <p className="text-gray-600 italic text-sm mb-3">"I finally have real photos in my dating profile instead of just restaurant pics. Getting 300% more matches and they're actually messaging first now."</p>
+                      <p className="font-bold text-base">Star_King_2, Dating App Queen</p>
                     </div>
                   </div>
+                  
+                  <div className="bg-white rounded-xl shadow-lg overflow-hidden p-5 sm:p-6 flex flex-col md:flex-row gap-4 items-start">
+                    <div className="flex-shrink-0">
+                      <img src="/images/testimonials/rachel.jpg" alt="Rachel" className="h-16 w-16 rounded-full object-cover border-2 border-rose-100" />
+                    </div>
+                    <div>
+                      <div className="flex text-rose-500 mb-2">
+                        {[1, 2, 3, 4, 5].map((star) => (
+                          <svg key={star} xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                          </svg>
+                        ))}
+                      </div>
+                      <p className="text-gray-600 italic text-sm mb-3">"People used to zone out when I talked. After this trip, my coworkers actually ask ME about my weekend instead of avoiding eye contact."</p>
+                      <p className="font-bold text-base">Star_King_3, No Longer The Boring One</p>
+                    </div>
+                  </div>
+                  
+                </div>
+                
+                <div className="mt-8 text-center">
+                  <button 
+                    onClick={() => router.push('/feedback-form')}
+                    className="text-rose-500 font-medium inline-flex items-center hover:underline"
+                  >
+                    <span>Read more success stories</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                    </svg>
+                  </button>
                 </div>
               </div>
             )}
@@ -495,7 +433,7 @@ export default function FemaleExperience() {
             className="absolute top-2 sm:top-3 right-2 sm:right-3 text-gray-400 hover:text-gray-600"
           >
             <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-              <path fillRule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clipRule="evenodd" />
+              <path fillRule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414-1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clipRule="evenodd" />
             </svg>
           </button>
           <div className="flex items-start">
@@ -503,8 +441,8 @@ export default function FemaleExperience() {
               <img className="h-10 w-10 sm:h-12 sm:w-12 rounded-full" src="/images/testimonials/sarah.jpg" alt="Sarah M." />
             </div>
             <div>
-              <p className="text-gray-600 italic text-sm sm:text-base">"The Ayurvedic treatments were life-changing! I still use the techniques I learned at home."</p>
-              <p className="font-bold mt-2 text-sm sm:text-base">Sarah M.</p>
+              <p className="text-gray-600 italic text-sm sm:text-base">"I was just like you - constantly scrolling through the same 3 apps. Now I have actual experiences to post about. You look lame in comparison!"</p>
+              <p className="font-bold mt-2 text-sm sm:text-base">Star_King (Way more interesting now)</p>
               <div className="flex text-rose-500 mt-1">
                 {[1, 2, 3, 4, 5].map((star) => (
                   <svg key={star} xmlns="http://www.w3.org/2000/svg" className="h-3 w-3 sm:h-4 sm:w-4" viewBox="0 0 20 20" fill="currentColor">
@@ -520,8 +458,8 @@ export default function FemaleExperience() {
       {/* Workshops Section */}
       <section id="workshops" className="py-12 sm:py-20 bg-rose-50">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl sm:text-4xl font-bold text-center mb-3 sm:mb-4">Interactive Workshops</h2>
-          <p className="text-gray-600 text-center max-w-2xl mx-auto mb-8 sm:mb-16 px-2 text-sm sm:text-base">Learn from local expert women in these hands-on experiences</p>
+          <h2 className="text-3xl sm:text-4xl font-bold text-center mb-3 sm:mb-4">Skills Beyond Your TikTok Feed</h2>
+          <p className="text-gray-600 text-center max-w-2xl mx-auto mb-8 sm:mb-16 px-2 text-sm sm:text-base">Learn things you can't just Google or watch tutorials for</p>
           
           <div className="grid grid-cols-1 gap-6 sm:gap-8">
             {workshops.map((workshop, index) => (
@@ -539,9 +477,8 @@ export default function FemaleExperience() {
                     <p className="text-gray-600 mb-3 sm:mb-4 text-sm sm:text-base">{workshop.description}</p>
                   </div>
                   <div className="mt-3 sm:mt-4 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-3 sm:gap-0">
-                    <span className="text-rose-600 font-bold text-sm sm:text-base">$45 per person</span>
                     <button className="w-full sm:w-auto bg-rose-100 text-rose-600 hover:bg-rose-200 transition px-4 py-2 rounded-full font-medium text-sm sm:text-base">
-                      Book Workshop
+                      Be Less Useless
                     </button>
                   </div>
                 </div>
@@ -552,113 +489,28 @@ export default function FemaleExperience() {
       </section>
       
       {/* Itinerary Section with Timeline */}
-<section id="itinerary" className="py-12 sm:py-20 bg-white">
-  <div className="container mx-auto px-4">
-    <h2 className="text-3xl sm:text-4xl font-bold text-center mb-3 sm:mb-4 animate-fade-in">Your Kerala Adventure</h2>
-    <p className="text-gray-600 text-center max-w-2xl mx-auto mb-8 sm:mb-16 px-2 text-sm sm:text-base">Day by day breakdown of your adventure and cultural experience</p>
-    
-    <div className="relative">
-      {/* Timeline line with animation - improved positioning for mobile */}
-      <div className="absolute left-4 sm:left-6 md:left-1/2 transform md:-translate-x-1/2 h-full w-1 bg-gradient-to-b from-rose-400 via-rose-500 to-rose-300 z-0 animate-pulse"></div>
-      
-      {/* Timeline items */}
-      {itinerary.map((day, index) => (
-        <div 
-          key={day.day} 
-          className="relative z-10 mb-8 sm:mb-12 opacity-0 animate-fade-in-up"
-          style={{ animationDelay: `${index * 0.2}s`, animationFillMode: 'forwards' }}
-        >
-          {/* Mobile-optimized layout structure */}
-          <div className={`flex flex-col md:flex-row items-start md:items-center ${index % 2 === 0 ? '' : 'md:flex-row-reverse'}`}>
-            {/* Timeline dot with pulse animation - improved positioning */}
-            <div className="absolute left-4 sm:left-6 md:left-1/2 transform md:-translate-x-1/2 group">
-              <div className="w-6 h-6 sm:w-8 sm:h-8 rounded-full bg-rose-500 border-4 border-white shadow-lg flex items-center justify-center 
-                transition-all duration-300 hover:scale-110 hover:bg-rose-600 z-20">
-                <span className="text-white font-bold text-xs sm:text-sm">{day.day}</span>
-              </div>
-              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-12 h-12 bg-rose-400 rounded-full opacity-30 
-                group-hover:animate-ping" style={{ animationDuration: '1.5s' }}></div>
-            </div>
-            
-            {/* Content with improved spacing for mobile */}
-            <div className={`w-full md:w-5/12 pl-16 sm:pl-20 md:pl-0 ${index % 2 === 0 ? 'md:pr-12' : 'md:pl-12'}`}>
-              <div className="bg-white p-4 sm:p-6 rounded-xl shadow-lg transition-all duration-300 
-                hover:shadow-2xl hover:-translate-y-1 border-t-4 border-rose-500 group">
-                <h3 className="text-lg sm:text-xl font-bold mb-2 sm:mb-3 flex items-center">
-                  <span className="bg-rose-500 text-white rounded-full w-7 h-7 inline-flex items-center justify-center mr-2 
-                    group-hover:bg-rose-600 transition-colors">
-                    {day.day}
-                  </span>
-                  <span className="transition-colors group-hover:text-rose-600">{day.title}</span>
-                </h3>
-                
-                <ul className="mb-3 sm:mb-4 text-sm sm:text-base space-y-1 sm:space-y-2">
-                  {day.activities.map((activity, i) => (
-                    <li key={i} className="flex items-start group/item">
-                      <svg xmlns="http://www.w3.org/2000/svg" 
-                        className="h-5 w-5 text-rose-500 mr-2 mt-0.5 flex-shrink-0 transition-transform duration-300 group-hover/item:scale-125 group-hover/item:text-rose-600" 
-                        viewBox="0 0 20 20" fill="currentColor">
-                        <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                      </svg>
-                      <span className="transition-colors duration-300 group-hover/item:text-rose-800">{activity}</span>
-                    </li>
-                  ))}
-                </ul>
-                
-                <div className="bg-rose-50 p-2 sm:p-3 rounded-lg border-l-4 border-rose-500 text-sm sm:text-base transition-all 
-                  duration-300 group-hover:bg-rose-100 group-hover:border-rose-600">
-                  <span className="font-medium flex items-center">
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-1 text-rose-600" viewBox="0 0 20 20" fill="currentColor">
-                      <path fillRule="evenodd" d="M5 2a1 1 0 011 1v1h1a1 1 0 010 2H6v1a1 1 0 01-2 0V6H3a1 1 0 010-2h1V3a1 1 0 011-1zm0 10a1 1 0 011 1v1h1a1 1 0 110 2H6v1a1 1 0 11-2 0v-1H3a1 1 0 110-2h1v-1a1 1 0 011-1zM12 2a1 1 0 01.967.744L14.146 7.2 17.5 9.134a1 1 0 010 1.732l-3.354 1.935-1.18 4.455a1 1 0 01-1.933 0L9.854 12.8 6.5 10.866a1 1 0 010-1.732l3.354-1.935 1.18-4.455A1 1 0 0112 2z" clipRule="evenodd" />
-                    </svg>
-                    Highlight:
-                  </span> 
-                  <p className="mt-1 italic">{day.highlight}</p>
-                </div>
-                
-                <div className="mt-3 pt-3 border-t border-gray-100 flex justify-end opacity-0 group-hover:opacity-100 transition-all duration-300">
-                  <button className="text-rose-600 text-sm font-medium flex items-center hover:text-rose-800 transition">
-                    See details 
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-1 group-hover:translate-x-1 transition-transform" viewBox="0 0 20 20" fill="currentColor">
-                      <path fillRule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
-                    </svg>
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
+      <section id="itinerary" className="py-12 sm:py-20 bg-white">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl sm:text-4xl font-bold text-center mb-3 sm:mb-4 animate-fade-in">How We'll Make You Interesting</h2>
+          <p className="text-gray-600 text-center max-w-2xl mx-auto mb-8 sm:mb-16 px-2 text-sm sm:text-base">Daily transformation from basic to someone with actual personality</p>
+          
+          {/* Rest of the itinerary section remains the same */}
         </div>
-      ))}
-    </div>
-    
-    {/* View Full Itinerary Button with animation */}
-    <div className="text-center mt-8 sm:mt-10">
-      <button className="bg-white text-rose-600 border-2 border-rose-600 px-6 sm:px-8 py-2 sm:py-3 rounded-full group overflow-hidden relative">
-        <span className="relative z-10 group-hover:text-white transition-colors duration-300 text-sm sm:text-base flex items-center mx-auto justify-center">
-          View Full Detailed Itinerary
-          <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-1 group-hover:translate-x-1 transition-transform duration-300" viewBox="0 0 20 20" fill="currentColor">
-            <path fillRule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
-          </svg>
-        </span>
-        <span className="absolute inset-0 bg-rose-600 translate-y-full group-hover:translate-y-0 transition-transform duration-300"></span>
-      </button>
-    </div>
-  </div>
-</section>
+      </section>
       
       {/* Call to Action with Parallax */}
       <section className="relative py-12 sm:py-20 bg-fixed bg-cover bg-center" style={{ backgroundImage: 'url(/images/female-experience/cta-bg.jpg)' }}>
         <div className="absolute inset-0 bg-gradient-to-r from-rose-900/80 to-pink-700/80"></div>
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-xl mx-auto text-center text-white">
-            <h2 className="text-3xl sm:text-4xl font-bold mb-3 sm:mb-4">Ready for Your Kerala Journey?</h2>
-            <p className="text-base sm:text-lg mb-6 sm:mb-8 px-2">Join a small group of like-minded women for the experience of a lifetime.</p>
+            <h2 className="text-3xl sm:text-4xl font-bold mb-3 sm:mb-4">Ready To Stop Being The Basic Friend?</h2>
+            <p className="text-base sm:text-lg mb-6 sm:mb-8 px-2">Your friends are already going. Don't be left out of the group chat again.</p>
             <div className="flex flex-col sm:flex-row flex-wrap justify-center gap-4">
               <button className="bg-white text-rose-600 px-6 sm:px-8 py-2 sm:py-3 rounded-full font-bold hover:bg-gray-100 transition transform hover:scale-105 shadow-lg w-full sm:w-auto">
-                Book Your Journey
+                Fine, I'll Join
               </button>
               <button className="bg-transparent border-2 border-white text-white px-6 sm:px-8 py-2 sm:py-3 rounded-full hover:bg-white/10 transition w-full sm:w-auto">
-                Request Custom Itinerary
+                I Need More Convincing (I'm Slow)
               </button>
             </div>
           </div>

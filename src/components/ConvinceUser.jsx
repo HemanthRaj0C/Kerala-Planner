@@ -7,18 +7,18 @@ export default function ConvinceUser({ onClose, onJoin, onDecline }) {
 
   const reasons = [
     {
-      title: "Once in a Lifetime Experience",
-      description: "Kerala's unique blend of natural beauty and cultural heritage creates experiences you can't find anywhere else in the world.",
+      title: "We All Know You've Got Nothing Better To Do",
+      description: "Let's be honest, what else are you doing? Sitting around watching Netflix? This is your chance to finally have something interesting to talk about.",
       image: "/images/convince/experience.jpg"
     },
     {
-      title: "Limited Time Special Pricing",
-      description: "Our current pricing is 15% below market rates - this specific trip package and price point won't be available again.",
+      title: "Your Social Media Needs This Desperately",
+      description: "Your Instagram feed is as boring as your excuses. These photos will finally make people think you have an actual life outside your apartment.",
       image: "/images/convince/pricing.jpg"
     },
     {
-      title: "Small Group, Personal Experience",
-      description: "With just 24 travelers maximum, you'll enjoy personalized attention and make meaningful connections.",
+      title: "FOMO Will Destroy You If You Miss This",
+      description: "We're all going to have the time of our lives, and you'll be stuck at home hearing about it for YEARS. Is that what you want?",
       image: "/images/convince/group.jpg"
     }
   ];
@@ -33,12 +33,12 @@ export default function ConvinceUser({ onClose, onJoin, onDecline }) {
 
   const testimonials = [
     {
-      quote: "The Kerala trip exceeded all my expectations. The backwaters cruise was magical!",
-      author: "Sarah M., traveled 2024"
+      quote: "I almost didn't go because I had 'work'. Best decision I ever made was ditching that excuse and going anyway!",
+      author: "Star_King (who actually knows how to have fun)"
     },
     {
-      quote: "I've traveled to 42 countries, and Kerala remains one of my favorite destinations.",
-      author: "James T., traveled 2023"
+      quote: "When they said Kerala was life-changing, I rolled my eyes. Now I won't shut up about it. Don't be me before the trip.",
+      author: "Star_King_2 (used to be boring like you)"
     }
   ];
 
@@ -60,7 +60,7 @@ export default function ConvinceUser({ onClose, onJoin, onDecline }) {
 
         {/* Content */}
         <div className="p-6">
-          <h2 className="text-2xl font-bold text-center mb-6">Still on the fence?</h2>
+          <h2 className="text-2xl font-bold text-center mb-6">Still Making Lame Excuses?</h2>
 
           {/* Carousel */}
           <div className="mb-8">
@@ -99,7 +99,7 @@ export default function ConvinceUser({ onClose, onJoin, onDecline }) {
 
           {/* Testimonials */}
           <div className="bg-green-50 p-4 rounded-lg mb-8">
-            <h3 className="text-lg font-bold mb-3">What previous travelers say:</h3>
+            <h3 className="text-lg font-bold mb-3">People who once were as lame as you:</h3>
             {testimonials.map((testimonial, index) => (
               <div key={index} className={index > 0 ? 'mt-4 pt-4 border-t' : ''}>
                 <p className="italic">"{testimonial.quote}"</p>
@@ -110,8 +110,8 @@ export default function ConvinceUser({ onClose, onJoin, onDecline }) {
 
           {/* Special Offer */}
           <div className="bg-blue-50 p-4 rounded-lg mb-8">
-            <h3 className="text-lg font-bold mb-1">Limited Time Offer:</h3>
-            <p>Join in the next 7 days and receive a complimentary Ayurvedic spa treatment package (valued at $150)!</p>
+            <h3 className="text-lg font-bold mb-1">Overly Dramatic Warning:</h3>
+            <p>If you don't come with us, you'll probably regret it for the rest of your sad, unadventurous life. Just saying.</p>
           </div>
 
           {/* Action Buttons */}
@@ -120,13 +120,13 @@ export default function ConvinceUser({ onClose, onJoin, onDecline }) {
               onClick={onJoin}
               className="bg-green-600 text-white px-10 py-3 rounded-full hover:bg-green-700 transition"
             >
-              I'm Convinced, Sign Me Up!
+              Fine, I'll Join You Idiots
             </button>
             <button
               onClick={onDecline}
               className="bg-white border border-gray-300 text-gray-700 px-10 py-3 rounded-full hover:bg-gray-100 transition"
             >
-              Still Not Ready
+              I Hate Fun and Happiness
             </button>
           </div>
         </div>
