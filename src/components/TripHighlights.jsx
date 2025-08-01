@@ -11,19 +11,19 @@ export default function TripHighlights() {
       {
         title: 'Alleppey Backwaters',
         description: 'Float like royalty on a luxury houseboat while your Instagram followers seethe with jealousy.',
-        image: '/images/highlights/backwaters.jpg',
+        image: 'https://images.unsplash.com/photo-1464983953574-0892a716854b', // Houseboat/Backwaters
         facts: ['Better than ANY puddle you\'ve ever seen near your home', 'Your apartment looks like a trash can compared to these houseboats', 'Your dating profile needs these photos desperately']
       },
       {
         title: 'Munnar Tea Plantations',
         description: 'Those sad tea bags in your kitchen cabinet? This is where REAL tea comes from, you uncultured swine.',
-        image: '/images/highlights/munnar.jpg',
+        image: 'https://images.unsplash.com/photo-1502086223501-7ea6ecd79368', // Munnar tea plantations
         facts: ['Views so good they\'ll break your phone\'s camera', 'The air smells better than your entire neighborhood', 'You\'ll never respect your grocery store tea again']
       },
       {
         title: 'Periyar Wildlife Sanctuary',
         description: 'See actual wild tigers instead of those sad zoo cats you usually pretend to enjoy.',
-        image: '/images/highlights/periyar.jpg',
+        image: 'https://images.unsplash.com/photo-1508672019048-805c876b67e2', // Periyar wildlife sanctuary
         facts: ['Watch elephants living their best life while you\'re still figuring out yours', 'No glass barriers like your pathetic local zoo', 'Animals that are more interesting than your current friends']
       }
     ],
@@ -31,19 +31,19 @@ export default function TripHighlights() {
       {
         title: 'Kathakali Performances',
         description: 'Witness performers who trained for a DECADE while you can\'t even commit to a full season of any TV show.',
-        image: '/images/highlights/kathakali.jpg',
+        image: 'https://images.unsplash.com/photo-1519125323398-675f0ddb6308', // Kathakali performance
         facts: ['More colorful than your entire personality', 'Performers with more talent in their pinky than you have in your entire body', 'Actually worth putting your phone down for once']
       },
       {
         title: 'Fort Kochi',
         description: 'Walk streets that are actually historically significant, not like your suburb from the 1980s that you think is "vintage."',
-        image: '/images/highlights/fort-kochi.jpg',
+        image: 'https://images.unsplash.com/photo-1501594907352-04cda38ebc29', // Fort Kochi
         facts: ['Fishing techniques older than your country', 'Colonial architecture that puts your IKEA furniture to absolute shame', 'Your history teacher would be ashamed you almost missed this']
       },
       {
         title: 'Thrissur Pooram Festival',
         description: 'A festival that makes your local parade look like a sad birthday party for a forgotten hamster.',
-        image: '/images/highlights/thrissur.jpg',
+        image: 'https://images.unsplash.com/photo-1465101046530-73398c7f28ca', // Thrissur Pooram festival
         facts: ['Elephants dressed better than you on your best day', 'Drums that will make your Spotify playlist sound like amateur hour', 'The only thing that might make you interesting at parties']
       }
     ],
@@ -51,19 +51,19 @@ export default function TripHighlights() {
       {
         title: 'Ayurvedic Treatments',
         description: 'Experience actual ancient healing while you usually just pop Advil and hope your problems go away.',
-        image: '/images/highlights/ayurveda.jpg',
+        image: 'https://images.unsplash.com/photo-1504196606672-aef5c9cefc92', // Ayurveda
         facts: ['Treatments that make your bubble bath look absolutely pathetic', '5,000 years of wisdom vs. your WebMD searches', 'You\'ll never respect your local strip mall "spa" again']
       },
       {
         title: 'Yoga Retreats',
         description: 'Practice yoga where it was meant to be done, not in your stuffy apartment between the couch and that pile of laundry.',
-        image: '/images/highlights/yoga.jpg',
+        image: 'https://images.unsplash.com/photo-1519864600265-abb23847ef2c', // Yoga retreat
         facts: ['Poses with views that destroy your living room scenery', 'Actual peace and quiet without your neighbor\'s terrible music', 'Instructors who won\'t judge your terrible form (at least not to your face)']
       },
       {
         title: 'Wellness Cuisine',
         description: 'Eat food that\'s both healthy AND delicious, not your sad desk salad or "healthy" frozen dinners for one.',
-        image: '/images/highlights/cuisine.jpg',
+        image: 'https://images.unsplash.com/photo-1504674900247-0877df9cc836', // Kerala cuisine
         facts: ['Spices you can\'t even pronounce but will pretend to know later', 'Food that\'s Instagram-worthy without 17 filters', 'Zero chance of getting delivery from this cuisine at your sad apartment']
       }
     ]

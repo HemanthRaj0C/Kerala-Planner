@@ -8,7 +8,7 @@ export default function JoinDecision() {
   const router = useRouter();
   const [showConvinceModal, setShowConvinceModal] = useState(false);
   const [countdown, setCountdown] = useState({
-    days: 0,
+    days: 373,
     hours: 0,
     minutes: 0,
     seconds: 0
@@ -16,7 +16,7 @@ export default function JoinDecision() {
   
   // Set trip date to June 15, 2025
   useEffect(() => {
-    const tripDate = new Date('June 15, 2025').getTime();
+    const tripDate = new Date('May 04, 2026').getTime();
     
     const updateCountdown = () => {
       const now = new Date().getTime();

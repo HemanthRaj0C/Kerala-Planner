@@ -13,14 +13,14 @@ export default function EnhancedBrochure() {
     {
       title: "Stop Scrolling And Do Something",
       content: "Instead of wasting another year of your life looking at other people's vacations, how about you actually experience something worth talking about for once? Our Kerala trip is better than whatever's in your sad social feed.",
-      image: "/images/brochure/cover.jpg",
+      image: "https://images.unsplash.com/photo-1506744038136-46273834b3fb", // Kerala backwaters as cover
       isMainPage: true,
       bgColor: "bg-emerald-50"
     },
     {
       title: "Day 1-2: Finally See Something Real",
       content: "Your apartment walls are tired of your face. Start in Kochi, where you can pretend to be cultured as you discover architecture that's been around longer than your attention span. Your Instagram will actually be interesting for once.",
-      image: "/images/brochure/kochi.jpg",
+      image: "https://images.unsplash.com/photo-1501594907352-04cda38ebc29", // Kochi
       highlights: [
         "Visit historic places instead of the same coffee shop",
         "See sunset views without adding a filter",
@@ -32,7 +32,7 @@ export default function EnhancedBrochure() {
     {
       title: "Day 3-4: Water Better Than Your Bathtub",
       content: "Put down your rubber duck and experience actual water. Float through Alleppey on a houseboat that makes your apartment look like the sad box it is. Maybe you'll finally relax instead of just saying you're going to.",
-      image: "/images/brochure/alleppey.jpg",
+      image: "https://images.unsplash.com/photo-1464983953574-0892a716854b", // Alleppey
       highlights: [
         "Sleep on a boat, not your secondhand mattress",
         "Fresh seafood not from a delivery app",
@@ -44,7 +44,7 @@ export default function EnhancedBrochure() {
     {
       title: "Day 5-6: Hills That Aren't Just Desktop Wallpapers",
       content: "Yes, touching grass is an actual thing. Munnar's hills and tea plantations will make your sad house plant collection look even more pathetic. Breathe air that hasn't been recycled through your apartment's HVAC system.",
-      image: "/images/brochure/munnar.jpg",
+      image: "https://images.unsplash.com/photo-1502086223501-7ea6ecd79368", // Munnar
       highlights: [
         "See how tea is actually made, not just steeped",
         "Walk in nature without complaining about it",
@@ -56,7 +56,7 @@ export default function EnhancedBrochure() {
     {
       title: "Day 7: Wellness Better Than Your App",
       content: "End your trip with actual self-care, not just buying another scented candle. Experience Ayurveda, which has been working for thousands of years, unlike your fad diet that you'll quit next week.",
-      image: "/images/brochure/ayurveda.jpg",
+      image: "https://images.unsplash.com/photo-1504196606672-aef5c9cefc92", // Ayurveda
       highlights: [
         "Real health advice, not from TikTok",
         "Massages better than your foam roller",
@@ -68,7 +68,7 @@ export default function EnhancedBrochure() {
     {
       title: "Stuff You Need To Know",
       content: "We're leaving May first week. This trip includes everything you need because we know you can't plan your way out of a paper bag. Limited to 24 people so we don't have to deal with too many of you at once.",
-      image: "/images/brochure/info.jpg",
+      image: "https://images.unsplash.com/photo-1465101046530-73398c7f28ca", // Info/Travel
       isInfoPage: true,
       details: [
         "Price: Depending on Number of People (cheaper than your monthly takeout habit)",

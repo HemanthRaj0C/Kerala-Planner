@@ -14,18 +14,42 @@ export default function Home() {
   const [isConvinceUserOpen, setIsConvinceUserOpen] = useState(false);
   const [activeImage, setActiveImage] = useState(0);
   const [countdown, setCountdown] = useState({
-    days: 3,
-    hours: 14,
-    minutes: 22,
-    seconds: 45
+    days: 373,
+    hours: 0,
+    minutes: 0,
+    seconds: 0
   });
+
+  // Set trip date to May 04, 2026
+  useEffect(() => {
+    const tripDate = new Date('May 04, 2026').getTime();
+    
+    const updateCountdown = () => {
+      const now = new Date().getTime();
+      const distance = tripDate - now;
+      
+      if (distance > 0) {
+        setCountdown({
+          days: Math.floor(distance / (1000 * 60 * 60 * 24)),
+          hours: Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)),
+          minutes: Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60)),
+          seconds: Math.floor((distance % (1000 * 60)) / 1000)
+        });
+      }
+    };
+    
+    updateCountdown();
+    const interval = setInterval(updateCountdown, 1000);
+    return () => clearInterval(interval);
+  }, []);
+
   const router = useRouter();
   
   const carouselImages = [
-    '/images/shared/kerala-hero.jpg',
-    '/images/shared/kerala-backwaters.jpg',
-    '/images/shared/kerala-tea-plantations.jpg',
-    '/images/shared/kerala-culture.jpg'
+    'https://images.unsplash.com/photo-1506744038136-46273834b3fb', // Kerala backwaters
+    'https://images.unsplash.com/photo-1464983953574-0892a716854b', // Houseboat
+    'https://images.unsplash.com/photo-1502086223501-7ea6ecd79368', // Tea plantations
+    'https://images.unsplash.com/photo-1519125323398-675f0ddb6308', // Kathakali dancer
   ];
 
   const keralaFacts = [
@@ -194,7 +218,7 @@ export default function Home() {
             <div className="rounded-xl overflow-hidden bg-gray-50 border border-gray-200 hover:shadow-xl transition duration-300 transform hover:-translate-y-1 group">
               <div className="h-60 overflow-hidden relative">
                 <img 
-                  src="/images/shared/male-experience.jpg" 
+                  src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429" 
                   alt="Male experience" 
                   className="w-full h-full object-cover group-hover:scale-105 transition duration-500"
                 />
@@ -219,7 +243,7 @@ export default function Home() {
             <div className="rounded-xl overflow-hidden bg-gray-50 border border-gray-200 hover:shadow-xl transition duration-300 transform hover:-translate-y-1 group">
               <div className="h-60 overflow-hidden relative">
                 <img 
-                  src="/images/shared/female-experience.jpg" 
+                  src="https://images.unsplash.com/photo-1517841905240-472988babdf9" 
                   alt="Female experience" 
                   className="w-full h-full object-cover group-hover:scale-105 transition duration-500"
                 />
@@ -260,7 +284,7 @@ export default function Home() {
               <p className="italic text-gray-600 mb-4 pt-2">I can't believe they're still waffling about this trip. We've been planning this for MONTHS! What a flake.</p>
               <div className="flex items-center">
                 <div className="w-12 h-12 rounded-full overflow-hidden mr-4">
-                  <img src="/images/testimonials/sarah.jpg" alt="Sarah M." className="w-full h-full object-cover" />
+                  <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Sarah M." className="w-full h-full object-cover" />
                 </div>
                 <div>
                   <p className="font-bold">Star_King (Your So-Called Friend)</p>
@@ -279,7 +303,7 @@ export default function Home() {
               <p className="italic text-gray-600 mb-4 pt-2">Seriously? Still thinking about it? This is why we don't invite them to spontaneous stuff anymore. Always a buzzkill.</p>
               <div className="flex items-center">
                 <div className="w-12 h-12 rounded-full overflow-hidden mr-4">
-                  <img src="/images/testimonials/james.jpg" alt="James T." className="w-full h-full object-cover" />
+                  <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="James T." className="w-full h-full object-cover" />
                 </div>
                 <div>
                   <p className="font-bold">Star_King_2 (Group Chat Admin)</p>
@@ -298,7 +322,7 @@ export default function Home() {
               <p className="italic text-gray-600 mb-4 pt-2">Even I'm going, and I hate traveling. What's their problem? Are they that afraid of having actual fun for once?</p>
               <div className="flex items-center">
                 <div className="w-12 h-12 rounded-full overflow-hidden mr-4">
-                  <img src="/images/testimonials/priya.jpg" alt="Priya K." className="w-full h-full object-cover" />
+                  <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Priya K." className="w-full h-full object-cover" />
                 </div>
                 <div>
                   <p className="font-bold">Star_King_3 (The One Who Hates Everything)</p>
@@ -326,7 +350,7 @@ export default function Home() {
           
           <div className="bg-gray-100 rounded-xl p-4 aspect-video relative overflow-hidden group shadow-lg">
             <img 
-              src="/images/shared/kerala-map.jpg" 
+              src="https://upload.wikimedia.org/wikipedia/commons/6/6e/Kerala_map_en.png" 
               alt="Interactive Kerala map" 
               className="w-full h-full object-cover rounded-lg"
             />
@@ -390,6 +414,19 @@ export default function Home() {
         />
       )}
       
+      {/* Support/Funding Section */}
+      <section className="py-16 bg-gradient-to-r from-yellow-200 to-yellow-400 text-gray-900 relative overflow-hidden">
+        <div className="container mx-auto px-4 flex flex-col md:flex-row items-center justify-center gap-10">
+          <div className="max-w-lg">
+            <h2 className="text-3xl font-bold mb-4 text-center md:text-left">Support This Project</h2>
+            <p className="mb-6 text-lg text-center md:text-left">If you enjoyed this site and want to support more fun, creative projects like this, you can scan the QR code below. <span className='font-semibold'>This is not for business or commercial purposes—just a friendly way to say thanks and help me keep building cool stuff!</span></p>
+            <div className="flex justify-center md:justify-start">
+              <img src="/qr.jpg" alt="Support QR Code" className="rounded-lg border-4 border-yellow-500 shadow-lg hover:scale-105 transition w-44 h-44 bg-white" />
+            </div>
+            <p className="mt-4 text-center md:text-left text-sm text-gray-700">Thank you for your support! 🙏</p>
+          </div>
+        </div>
+      </section>
       <Footer />
     </main>
   );
