@@ -17,7 +17,7 @@ export default function Policy() {
           <a href="https://merchant.razorpay.com/policy/QyVU1qqQgaE4DK" target="_blank" rel="noopener noreferrer" className="text-green-700 underline hover:text-green-900 font-semibold">Official Razorpay Policy Page</a>
         </nav>
         <div className="prose prose-lg max-w-none">
-          <p>For the purpose of these Terms and Conditions, The term <strong>"we", "us", "our"</strong> used anywhere on this page shall mean AKSSHAY B A, whose registered/operational office is PLOT 47 DOOR NO 03 13TH STREET BALAJI NAGAR ADAMBAKKAM. <strong>"you", “your", "user", “visitor”</strong> shall mean any natural or legal person who is visiting our website and/or agreed to purchase from us.</p>
+          <p>For the purpose of these Terms and Conditions, The term <strong>"we", "us", "our"</strong> used anywhere on this page shall mean HNM, whose registered/operational office is Sarathy Nagar, Kundrathur, Chennai, Malayambakkam, Tamil Nadu Kanchipuram TAMIL NADU 600069. <strong>"you", “your", "user", “visitor”</strong> shall mean any natural or legal person who is visiting our website and/or agreed to purchase from us.</p>
 
           <p>Your use of the website and/or purchase from us are governed by following Terms and Conditions:</p>
 
@@ -29,7 +29,7 @@ export default function Policy() {
             <li>All trademarks reproduced in our website which are not the property of, or licensed to, the operator are acknowledged on the website.</li>
             <li>Unauthorized use of information provided by us shall give rise to a claim for damages and/or be a criminal offense.</li>
             <li>From time to time our website may also include links to other websites. These links are provided for your convenience to provide further information.</li>
-            <li>You may not create a link to our website from another website or document without AKSSHYA B A’s prior written consent.</li>
+            <li>You may not create a link to our website from another website or document without HNM’s prior written consent.</li>
             <li>Any dispute arising out of use of our website and/or purchase with us and/or any engagement with us is subject to the laws of India.</li>
             <li>We, shall be under no liability whatsoever in respect of any loss or damage arising directly or indirectly out of the decline of authorization for any Transaction, on Account of the Cardholder having exceeded the preset limit mutually agreed by us with our acquiring bank from time to time.</li>
           </ul>
