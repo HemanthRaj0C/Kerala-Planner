@@ -7,6 +7,15 @@ export default function Policy() {
       <Header />
       <section className="container mx-auto px-4 py-30 max-w-3xl">
         <h1 className="text-4xl font-bold mb-8 text-center">Terms and Conditions</h1>
+        {/* Policy Navigation Links */}
+        <nav className="mb-8 flex flex-wrap justify-center gap-4 text-base">
+          <a href="/policy/terms" className="text-blue-700 underline hover:text-blue-900">Terms &amp; Conditions</a>
+          <a href="/policy/privacy" className="text-blue-700 underline hover:text-blue-900">Privacy Policy</a>
+          <a href="/policy/refund" className="text-blue-700 underline hover:text-blue-900">Refund Policy</a>
+          <a href="/policy/shipping" className="text-blue-700 underline hover:text-blue-900">Shipping Policy</a>
+          <a href="/policy/contact_us" className="text-blue-700 underline hover:text-blue-900">Contact Us</a>
+          <a href="https://merchant.razorpay.com/policy/QyVU1qqQgaE4DK" target="_blank" rel="noopener noreferrer" className="text-green-700 underline hover:text-green-900 font-semibold">Official Razorpay Policy Page</a>
+        </nav>
         <div className="prose prose-lg max-w-none">
           <p>For the purpose of these Terms and Conditions, The term <strong>"we", "us", "our"</strong> used anywhere on this page shall mean AKSSHAY B A, whose registered/operational office is PLOT 47 DOOR NO 03 13TH STREET BALAJI NAGAR ADAMBAKKAM. <strong>"you", “your", "user", “visitor”</strong> shall mean any natural or legal person who is visiting our website and/or agreed to purchase from us.</p>
 

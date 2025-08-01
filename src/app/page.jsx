@@ -423,6 +423,9 @@ export default function Home() {
             <div className="flex justify-center md:justify-start">
               <img src="/qr.jpg" alt="Support QR Code" className="rounded-lg border-4 border-yellow-500 shadow-lg hover:scale-105 transition w-44 h-44 bg-white" />
             </div>
+            <div className="mt-6 text-center md:text-left">
+              <a href="/policy" className="text-blue-700 underline hover:text-blue-900 font-medium">View our Terms, Privacy & Policies</a>
+            </div>
             <p className="mt-4 text-center md:text-left text-sm text-gray-700">Thank you for your support! 🙏</p>
           </div>
         </div>
